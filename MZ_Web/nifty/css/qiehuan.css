@@ -1,0 +1,73 @@
+html,body{
+	margin: 0;
+	height: 100%;
+}
+ul{
+	display: flex;
+	padding: 0;
+	margin: 0;
+	font-size: 0;	
+	border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+li{
+	flex: 1;
+	list-style: none;
+	display: inline-block;
+	font-size: 16px;
+	color: #758697;
+	text-align: center;
+	padding: 10px 0;	
+	opacity: 0.5;
+}
+p{
+	margin: 0;
+    font-size:12px;
+}
+.showLi{
+	opacity: 1;
+}
+.qiehuan{
+	position: relative;
+}
+.qiehuan>p{
+	position: absolute;
+	height: 3px;
+	width: 0;
+	background: #42a5f5;
+	bottom: 0;
+	left: 0;
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s; /* Safari */
+}
+.icon{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+.icon1 {
+    background: url(../img/1.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.icon2 {
+    background: url(../img/2.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.icon3 {
+    background: url(../img/3.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.icon4 {
+    background: url(../img/4.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.icon5 {
+    background: url(../img/5.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.icon6 {
+    background: url(../img/6.png) no-repeat center;
+    background-size: 100% 100%;
+}
+#page-content {
+    padding:0;
+}

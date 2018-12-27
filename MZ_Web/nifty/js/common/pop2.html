@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="../../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../css/nifty.min.css" rel="stylesheet" />
+    <link href="../../css/nifty.p8.css" rel="stylesheet" />
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="p8.common.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="comsib-xml hidden-xml">
+        <div class="panel-heading header-bottom">
+            <div class="panel-control">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#demo-tabs-box-1" data-toggle="tab" class="bd-xml">First Tab</a></li>
+                    <li><a href="#demo-tabs-box-2" data-toggle="tab" class="bd-xml">Second Tab</a></li>
+                </ul>
+            </div>
+            <h3 class="panel-title">Panel With tabs</h3>
+        </div>
+        <div class="panel-body panel-auto">
+            <div class="tab-content tab-bottom">
+                <div class="tab-pane margin-bottom-ml fade in active" id="demo-tabs-box-1">
+                    <p class="text-main text-semibold">First Tab Content</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
+                <div class="tab-pane margin-bottom-ml fade" id="demo-tabs-box-2">
+                    <p class="text-main text-semibold">Second Tab Content</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <p class="text-main text-semibold">Second Tab Content</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary btnPop" type="button">保存</button>
+        <button class="btn btn-default btnPop" type="button"
+                onclick="javascript:$.P8.common().pop_close();">
+            关闭
+        </button>
+    </div>
+</body>
+</html>

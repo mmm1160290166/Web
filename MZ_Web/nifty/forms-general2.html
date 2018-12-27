@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms-general</title>
+    <!--css引入  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nifty.min.css">
+    <link rel="stylesheet" href="css/demo/nifty-demo-icons.min.css">
+    <link rel="stylesheet" href="css/demo/nifty-demo.min.css">
+    <link rel="stylesheet" href="plugins/switchery/switchery.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.css">
+    <link href="plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+    <link href="plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/chosen/chosen.min.css">
+    <link rel="stylesheet" href="plugins/noUiSlider/nouislider.min.css">
+    <link href="plugins/select2/css/select2.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="plugins/pace/pace.min.css">
+    <link rel="stylesheet" href="plugins/magic-check/css/magic-check.min.css">
+    <!--有时分秒的插件-->
+    <link rel="stylesheet" href="plugins/bootstrap-datetimepicker-master/build/css/bootstrap-datetimepicker.min.css">
+    <link href="plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+    <!--上传的插件-->
+    <link rel="stylesheet" href="plugins/bootstrap-fileinput/css/fileinput.min.css">
+    <link rel="stylesheet" href="css/nifty.p8.css">
+    <link rel="stylesheet" href="css/genaral.css">
+
+    <!--js引入  -->
+    <script src="plugins/pace/pace.min.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nifty.min.js"></script>
+    <script src="js/demo/nifty-demo.min.js"></script>
+    <script src="plugins/switchery/switchery.min.js"></script>
+    <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+    <script src="plugins/chosen/chosen.jquery.min.js"></script>
+    <script src="plugins/select2/js/select2.min.js"></script>
+    <!--有时分秒的插件-->
+    <script src="plugins/bootstrap-datetimepicker-master/moment-develop/src/moment.js"></script>
+    <script src="plugins/bootstrap-datetimepicker-master/moment-develop/min/moment-with-locales.min.js"></script>
+    <script src="plugins/bootstrap-datetimepicker-master/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="plugins/bootstrap-datetimepicker-master/moment-develop/src/moment.js"></script>
+
+    <script src="plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+    <script src="js/demo/form-component.js"></script>
+    <!--上传的插件-->
+    <script src="plugins/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script src="plugins/bootstrap-fileinput/themes/gly/theme.js"></script>
+    <script src="plugins/bootstrap-fileinput/js/locales/zh.js"></script>
+
+
+    <style>
+       .file-preview,.fileinput-remove,.btn-file,.help-block{
+            position: absolute;
+            top:20px;
+            width:inherit;
+            left: 0px;
+        }
+        .fileinput-remove{
+            top: 30px;
+            left:50%;
+        }
+        .btn-file{
+            top: 30px;
+            left:60%;
+        }
+        .help-block{
+            position:absolute;
+            top:80px;
+            left:15%;
+            width: 100%;
+        }
+        .bootstrap-datetimepicker-widget table thead tr:first-child th:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, .2)
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page-content">
+        <div class="panel">
+            <div class="panel-heading rel-xml">
+                <h3 class="panel-title">Basic Data Tables with responsive plugin</h3>
+                <div id="demo-custom-toolbar2" class="table-toolbar-right abs-xml">
+                    <button id="demo-dt-addrow-btn" class="btn btn-primary">保存</button>
+                </div>
+            </div>
+
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th class="text-left">新建客户</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="odd-xml">
+                        <label class="control-label"> 文本框:</label>
+                    </td>
+                    <td class="even-xml">
+                        <input type="email" placeholder="text" class="form-control">
+                    </td>
+                    <td class="odd-xml">
+                        <label class="control-label"> 文本框:</label>
+                    </td>
+                    <td class="even-xml">
+                        <input type="email" placeholder="text" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="odd-xml">
+                        <label class="control-label"> 开窗:</label>
+                    </td>
+                    <td class="even-xml">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="New task" autocomplete="off">
+                            <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success"><i class="demo-pli-add"></i></button>
+                            </span>
+                        </div>
+                    </td>
+                    <td class="odd-xml">
+                        <label class="control-label"> 多行文本框:</label>
+                    <td class="even-xml">
+                        <textarea placeholder="textarea" rows="3" class="form-control"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="odd-xml">
+                        <label class="control-label">多选框</label>
+                    </td>
+                    <td class="even-xml">
+                        <div class="checkbox">
+                            <input id="demo-form-inline-checkbox" class="magic-checkbox" type="checkbox" checked>
+                            <label for="demo-form-inline-checkbox">Option 1 (pre-checked)</label>
+                            <input id="demo-form-inline-checkbox-2" class="magic-checkbox" type="checkbox">
+                            <label for="demo-form-inline-checkbox-2">Option 2</label>
+                            <input id="demo-form-inline-checkbox-3" class="magic-checkbox" type="checkbox">
+                            <label for="demo-form-inline-checkbox-3">Option 3</label>
+                        </div>
+                    </td>
+                    <td class="odd-xml">
+                        <label class="control-label">添加附件</label>
+                    </td>
+                    <td class="even-xml">
+                        <div class="form-group">
+                            <span class="pull-left btn btn-primary btn-file">
+                            点击添加附件 <input type="file">
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="odd-xml">
+                        <label class="control-label">添加标签:</label>
+                    </td>
+                    <td class="even-xml">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Add a tag" value="Sport, Movie, Documents, Video" data-role="tagsinput">
+                            <span class="input-group-btn top-xml">
+                                <button type="button" class="btn btn-success"><i class="demo-pli-add"></i></button>
+                            </span>
+                        </div>
+                    </td>
+                    <td class="odd-xml">
+                        <label class="control-label"> 是否选中:</label>
+                    </td>
+                    <td class="even-xml">
+                        <input id="demo-online-status-checkbox" class="toggle-switch" type="checkbox" checked>
+                        <label for="demo-online-status-checkbox"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="odd-xml">
+                        <label class="control-label"> 单选框:</label>
+                    </td>
+                    <td class="even-xml">
+                        <div class="radio">
+                            <input id="demo-inline-form-radio" class="magic-radio" type="radio" name="inline-form-radio" checked>
+                            <label for="demo-inline-form-radio">Option 1 (pre-checked)</label>
+
+                            <input id="demo-inline-form-radio-3" class="magic-radio" type="radio" name="inline-form-radio">
+                            <label for="demo-inline-form-radio-3">Option 3</label>
+                        </div>
+                    </td>
+                    <td class="odd-xml">
+                    </td>
+                    <td  class="even-xml">
+                        <select class="selectpicker" data-live-search="true" data-width="100%">
+                            <option>Family</option>
+                            <option>Friend</option>
+                            <option>Partner</option>
+                            <option>Sport</option>
+                            <option>Movie</option>
+                            <option>Documents</option>
+                            <option>Music</option>
+                            <option>Video</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="odd-xml">
+                    </td>
+                    <td class="even-xml">
+                        <select id="demo-cs-multiselect" data-placeholder="Choose a Country..." multiple tabindex="4">
+                            <option value="United States">United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Aland Islands">Aland Islands</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Bermuda">Bermuda</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Bolivia, Plurinational State of">Bolivia, Plurinational State of</option>
+                            <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+                            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Bouvet Island">Bouvet Island</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                            <option value="Brunei Darussalam">Brunei Darussalam</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Cape Verde">Cape Verde</option>
+                            <option value="Cayman Islands">Cayman Islands</option>
+                            <option value="Central African Republic">Central African Republic</option>
+                            <option value="Chad">Chad</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Christmas Island">Christmas Island</option>
+                            <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Comoros">Comoros</option>
+                            <option value="Congo">Congo</option>
+                            <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                            <option value="Cook Islands">Cook Islands</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Cote D&apos;ivoire">Cote D\'ivoire</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Curacao">Curacao</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Djibouti">Djibouti</option>
+                            <option value="Dominica">Dominica</option>
+                            <option value="Dominican Republic">Dominican Republic</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Equatorial Guinea">Equatorial Guinea</option>
+                            <option value="Eritrea">Eritrea</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                            <option value="Faroe Islands">Faroe Islands</option>
+
+
+                            <option value="Russian Federation">Russian Federation</option>
+                            <option value="Rwanda">Rwanda</option>
+                            <option value="Saint Barthelemy">Saint Barthelemy</option>
+                            <option value="Saint Helena, Ascension and Tristan da Cunha">Saint Helena, Ascension and Tristan da Cunha</option>
+                            <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                            <option value="Saint Lucia">Saint Lucia</option>
+                            <option value="Saint Martin (French part)">Saint Martin (French part)</option>
+                            <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                            <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                            <option value="Samoa">Samoa</option>
+                            <option value="San Marino">San Marino</option>
+                            <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Serbia">Serbia</option>
+                            <option value="Seychelles">Seychelles</option>
+                            <option value="Sierra Leone">Sierra Leone</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Sint Maarten (Dutch part)">Sint Maarten (Dutch part)</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Slovenia">Slovenia</option>
+                            <option value="Solomon Islands">Solomon Islands</option>
+                            <option value="Somalia">Somalia</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+                            <option value="South Sudan">South Sudan</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                            <option value="Swaziland">Swaziland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                            <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                            <option value="Tajikistan">Tajikistan</option>
+                            <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Timor-leste">Timor-leste</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Tokelau">Tokelau</option>
+                            <option value="Tonga">Tonga</option>
+                            <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                            <option value="Tuvalu">Tuvalu</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United States">United States</option>
+                            <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Vanuatu">Vanuatu</option>
+                            <option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option>
+                            <option value="Viet Nam">Viet Nam</option>
+                            <option value="Virgin Islands, British">Virgin Islands, British</option>
+                            <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                            <option value="Wallis and Futuna">Wallis and Futuna</option>
+                            <option value="Western Sahara">Western Sahara</option>
+                            <option value="Yemen">Yemen</option>
+                            <option value="Zambia">Zambia</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                    </td>
+                    <td class="odd-xml">
+                        <label class="control-label"> 选择日期(没有时分秒):</label>
+                    </td>
+                    <td class="even-xml">
+                        <div id="demo-dp-component date-picker">
+                            <div class="input-group date date-picker">
+                                <input type="text" class="form-control">
+                                <span class="input-group-addon"><i class="demo-pli-calendar-4"></i></span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="odd-xml">
+                        <label class="control-label"> 选择日期(有时分秒):</label>
+                    </td>
+                    <td class="even-xml">
+                        <div class="row">
+                            <div class='col-sm-12'>
+                                <div class="form-group">
+                                    <!--指定 date标记-->
+                                    <div class='input-group date' id='datetimepicker2'>
+                                        <input type='text' class="form-control" />
+                                        <span class="input-group-addon addon1">
+   <span class="glyphicon glyphicon-calendar"></span>
+  </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="odd-xml">
+                        <label class="control-label"> 上传图片:</label>
+
+                    </td>
+                    <td class="even-xml">
+                        <form class="form form-vertical" action="/avatar_upload.php" method="post" enctype="multipart/form-data">
+                            <div style="width: 400px;height: 300px;position: relative;">
+                                <div class="kv-avatar center-block text-center" style="width:200px">
+                                    <input id="avatar-1" name="avatar-1" type="file" class="file-loading" required>
+                                    <div class="help-block"><small>Select file < 1500 KB</small></div>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="kv-avatar-errors-1" class="center-block" style="width:800px;display:none"></div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+<script>
+    $(function () {
+        
+        $('.date-picker').datepicker({
+            language: 'zh-CN',
+            autoclose: true,//选中之后自动隐藏日期选择框
+            todayHighlight: true,
+            clearBtn: true,//清除按钮
+            format: "yyyy-mm-dd"//日期格式
+        })
+
+        $('#datetimepicker2').datetimepicker({
+            format: 'YYYY-MM-DD HH:mm',
+            locale: moment.locale('zh-cn'),
+        })
+        $('#datetimepicker2 input').on('click', function () {
+            $('.addon1').trigger('click');
+        })
+        var btnCust = '<button type="button" class="btn btn-default" title="Add picture tags" style="display: none" ' +
+            'onclick="alert(\'Call your custom code here.\')">' +
+            '<i class="glyphicon glyphicon-tag"></i>' +
+            '</button>';
+        $("#avatar-1").fileinput({
+            maxImageWidth: 170,
+            maxImageHeight:170,
+            overwriteInitial: true,
+            maxFileSize: 1500,
+            showClose: false,
+            showCaption: false,
+            browseLabel: '',
+            removeLabel: '',
+            browseIcon: '<i class="glyphicon glyphicon-folder-open"></i>',
+            removeIcon: '<i class="glyphicon glyphicon-remove"></i>',
+            removeTitle: 'Cancel or reset changes',
+            elErrorContainer: '#kv-avatar-errors-1',
+            msgErrorClass: 'alert alert-block alert-danger',
+            defaultPreviewContent: '<img src="img/touxiang.png" alt="Your Avatar" style="width:170px;height: 170px">',
+            layoutTemplates: {main2: '{preview} ' +  btnCust + ' {remove} {browse}'},
+            allowedFileExtensions: ["jpg", "png", "gif"]
+        });
+    })
+</script>
+</html>

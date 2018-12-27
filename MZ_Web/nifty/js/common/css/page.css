@@ -1,0 +1,17 @@
+﻿.page{display: inline-block; *display: inline; *zoom: 1; vertical-align: middle; margin: 10px 0; font-size: 0;}
+.page>*:first-child,
+.page>*:first-child em{border-radius: 2px 0 0 2px;}
+.page>*:last-child,
+.page>*:last-child em{border-radius: 0 2px 2px 0;}
+.page span,.page a{display: inline-block; *display: inline; *zoom: 1; vertical-align: middle; padding: 0 15px; border: 1px solid #e2e2e2; height: 28px; line-height: 28px; margin: 0 -1px 5px 0; background-color: #fff; color: #333; font-size: 12px;text-decoration: none;-webkit-box-sizing: content-box !important; -moz-box-sizing: content-box !important; box-sizing: content-box !important;}
+.page em{font-style: normal;-webkit-box-sizing: content-box !important; -moz-box-sizing: content-box !important; box-sizing: content-box !important;}
+.page span{color:#333; font-weight: 700;}
+.page .page-curr{position: relative;}
+.page .page-curr em{position: relative; color: #fff; font-weight: 400;}
+.page .page-curr .page-em{position: absolute; left: -1px; top: -1px; padding: 1px; width: 100%; height: 100%; background-color: #009688; }
+.page-prev em,
+.page-next em{font-family: Sim sun; font-size: 16px;}
+.page .page-total{height: 30px; line-height: 30px; margin-left: 1px; border: none;font-weight: 400;}
+.page input, .page button, .page select{height: 30px; line-height: 30px; border:1px solid #e2e2e2; border-radius: 2px; vertical-align: top;  background-color: #fff; -webkit-box-sizing: border-box !important; -moz-box-sizing: border-box !important; box-sizing: border-box !important;}
+.page select, .page input{width: 50px; margin: 0 5px; text-align: center;}
+.page button{margin-left: 5px; padding:0 15px; cursor: pointer;}

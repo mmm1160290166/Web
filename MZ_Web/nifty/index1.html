@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<style>
+li{
+  list-style: none;
+  float: left;
+  padding: 0;
+}
+ul{
+  padding: 0;
+}
+
+  #list1{
+    float: left;
+    width: 30%;
+  }
+  #list2{
+    width: 70%;
+    float: right;
+  }
+  #list1 li, #list2 li { float:left;  width:49%; height: 200px;overflow: hidden;}
+    #list1 div, #list2 div { width:90%; height:90%;}
+    #list2 { float:right; }
+  img{
+    width: 80%;
+    height: 80%;
+  }
+  .placeHolder div { background-color:white !important; border:dashed 1px gray !important; }
+</style>
+<!-- <script type="text/javascript">
+    $("ul:first").dragsort();
+  </script> -->
+<body id="bdy" style="height: 300px">
+  <button style="display: block" class="btn">7:3</button>
+  <button style="display: block" class="btn1">5:5</button>
+  <button style="display: block" class="btn2">3:7</button>
+  <ul id="list1">
+    <li><div>1<img src="img/s_pic1.png"  alt=""></div></li>
+    <li><div>2<img src="img/s_pic2.png"  alt=""></div></li>
+    <li><div>3<img src="img/s_pic3.png"  alt=""></div></li>
+    <li><div>4<img src="img/s_pic4.png"  alt=""></div></li>
+  </ul>
+  <ul id="list2">
+    <li><div>5<img src="img/s_pic5.png"  alt=""></div></li>
+    <li><div>6<img src="img/s_pic6.png"  alt=""></div></li>
+    <li><div>7<img src="img/s_pic7.png"  alt=""></div></li>
+    <li><div>8<img src="img/s_pic8.png"  alt=""></div></li>
+  </ul>
+  <div style="clear:both;"></div>
+  <div style="text-align:center;clear:both"></div>
+</body>
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/jquery.dragsort-0.5.1.min.js"></script>
+
+  <script type="text/javascript">
+    $("#list1, #list2").dragsort({ dragSelector: "div", dragBetween: true, dragEnd: saveOrder, placeHolderTemplate: "<li class='placeHolder'><div></div></li>" });
+    
+    function saveOrder() {
+      var data = $("#list1 li").map(function() { return $(this).children().html(); }).get();
+      $("input[name=list1SortOrder]").val(data.join("|"));
+    };
+    $(".btn").on("click", function () {
+      $("#list1").css("width","70%");
+      $("#list2").css("width","30%");
+    })
+    $(".btn1").on("click", function () {
+      $("#list1").css("width","50%");
+      $("#list2").css("width","50%");
+    })
+    $(".btn2").on("click", function () {
+      $("#list1").css("width","30%");
+      $("#list2").css("width","70%");
+    })
+  </script>
+</html>

@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pop up1</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/nifty.min.css">
+    <link rel="stylesheet" href="../../css/demo/nifty-demo.min.css">
+    <link rel="stylesheet" href="../../css/demo/nifty-demo-icons.min.css">
+    <link rel="stylesheet" href="../../plugins/bootstrap-select/bootstrap-select.css">
+    <link rel="stylesheet" href="../../plugins/magic-check/css/magic-check.min.css">
+    <link rel="stylesheet" href="../../css/nifty.p8.css">
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/nifty.min.js"></script>
+    <script src="../../plugins/bootstrap-select/bootstrap-select.js"></script>
+    <script src="p8.common.js" type="text/javascript"></script>
+    <style>
+        @media screen and (min-width: 1024px) {
+            body {
+                width: 1024px;
+                overflow-x: auto;
+            }
+        }
+    </style>
+    <script>
+        $(function () {
+            $(".value-xml").change(function () {
+                var val = $(".value-xml option:selected").val();
+                if (val == "单选框" || val == "多选框") {
+                    $(".shade1_xml").show();
+                    $(".shade2_xml").hide();
+                }
+                if (val == "下拉框" || val == "浏览按钮") {
+                    $(".shade1_xml").hide();
+                    $(".shade2_xml").show();
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="comsib-xml auto-xml">
+        <!--<iframe src="../../forms-table1.html" frameborder="0" width="100%" height="100%"></iframe>-->
+        <div>
+            <div class="formtitle pop1title-xml">
+                <span>主字段</span>
+            </div>
+            <div id="page-content">
+                <table class="table-xml table table-bordered border-xml" id="demo-foo-addrow">
+                    <tbody class="tb-xml">
+                        <tr>
+                            <td class="tdz-xml">
+                                <label class="control-label td-xml">字段名</label>
+                            </td>
+                            <td class="tdk-xml">
+                                <input type="text" placeholder="字段名" class="form-control">
+                            </td>
+                            <td class="tdz-xml">
+                                <label class="control-label td-xml">字段中文名</label>
+                            </td>
+                            <td class="tdk-xml">
+                                <input type="text" placeholder="字段中文名" class="form-control">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdz-xml">
+                                <label class="control-label td-xml">字段类型</label>
+                            </td>
+                            <td class="tdk-xml">
+                                <select class="selectpicker sel-xml" data-width="100%">
+                                    <option value="nvarchar">nvarchar</option>
+                                    <option value="Text">Text</option>
+                                    <option value="decimal">decimal</option>
+                                    <option value="datetime">datetime</option>
+                                    <option value="int">int</option>
+                                </select>
+                            </td>
+                            <td class="tdz-xml">
+                                <label class="control-label td-xml">字段长度</label>
+                            </td>
+                            <td class="tdk-xml">
+                                <input type="text" placeholder="50" class="form-control">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdz-xml">
+                                <label class="control-label td-xml"> 字段控件类型:</label>
+                            </td>
+                            <td class="tdk-xml">
+                                <select class="selectpicker value-xml" data-width="100%">
+                                    <option value="单行文本">单行文本</option>
+                                    <option value="多行文本">多行文本</option>
+                                    <option value="日期[y/m/d]">日期[y/m/d]</option>
+                                    <option value="日期[y/m/d h:M">日期[y/m/d h:M]</option>
+                                    <option value="下拉框">下拉框</option>
+                                    <option value="单选框">单选框</option>
+                                    <option value="多选框">多选框</option>
+                                    <option value="浏览按钮">浏览按钮</option>
+                                </select>
+                            </td>
+                            <td colspan="2"></td>
+                        </tr>
+                        <tr class="shade1_xml">
+                            <td class="tdz-xml">
+                                <label class="control-label td-xml"> 显示内容:</label>
+                            </td>
+                            <td class="tdk-xml" colspan="3">
+                                <input type="text" placeholder="添加值" class="form-control">
+                            </td>
+                        </tr>
+                        <tr class="shade2_xml">
+                            <td class="tdz-xml">
+                                <label class="control-label td-xml">数据源类型</label>
+                            </td>
+                            <td class="tdk-xml">
+                                <div class="input-group width-xml">
+                                    <input type="text" class="form-control" placeholder="系统数据源" autocomplete="off">
+                                    <span class="input-group-btn">
+                                        <button type="button" class="btn btn-success"><i class="demo-pli-add"></i></button>
+                                    </span>
+                                </div>
+                                <button class="btn btn-primary btn-labeled demo-psi-star img-xml">建立关系</button>
+                            </td>
+                            <td class="tdz-xml">
+                                <label class="control-label td-xml">绑定数据源</label>
+                            </td>
+                            <td class="tdk-xml">
+                                <input type="text" placeholder="绑定数据源" class="form-control">
+                            </td>
+                        </tr>
+                        <tr class="shade2_xml">
+                            <td class="tdz-xml">
+                                <label class="control-label td-xml">是否多选</label>
+                            </td>
+                            <td class="tdk-xml">
+                                <div class="radio left-xml">
+                                    <input id="demo-inline-form-radio4" class="magic-radio" type="radio"
+                                           name="inline-form-radio2" checked>
+                                    <label for="demo-inline-form-radio4">是</label>
+
+                                    <input id="demo-inline-form-radio5" class="magic-radio" type="radio"
+                                           name="inline-form-radio2">
+                                    <label for="demo-inline-form-radio5">否</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <textarea placeholder="描述" rows="3" class="form-control"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <div class="formtitle pop1title-xml">
+                <span>PC表单属性</span>
+            </div>
+            <div id="page-content">
+                <table class="table-xml table table-bordered border-xml" id="demo-foo-addrow1">
+                    <tbody class="tb-xml">
+                        <tr>
+                            <td class="tdz-xml">
+                                <label class="control-label td-xml">PC端排序</label>
+                            </td>
+                            <td class="tdk-xml">
+                                <input type="text" placeholder="PC端排序" class="form-control">
+                            </td>
+                            <td class="tdw-xml">
+                                <label class="control-label td-xml">PC端是否启用</label>
+                                <input type="checkbox" class="mid-xml" checked="checked">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdz-xml">
+                                <label class="control-label td-xml">字段是否只读</label>
+                            </td>
+                            <td class="tdk-xml" colspan="3">
+                                <div class="radio left-xml">
+                                    <input id="demo-inline-form-radio1" class="magic-radio" type="radio"
+                                           name="inline-form-radio" checked>
+                                    <label for="demo-inline-form-radio1">可写</label>
+
+                                    <input id="demo-inline-form-radio2" class="magic-radio" type="radio"
+                                           name="inline-form-radio">
+                                    <label for="demo-inline-form-radio2">只读</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <div class="formtitle pop1title-xml">
+                <span>移动表单属性</span>
+            </div>
+            <div id="page-content">
+                <table class="table-xml table table-bordered border-xml" id="demo-foo-addrow2">
+                    <tbody class="tb-xml">
+                        <tr>
+                            <td class="tdz-xml">
+                                <label class="control-label td-xml">移动端排序</label>
+                            </td>
+                            <td class="tdk-xml">
+                                <input type="text" placeholder="移动端排序" class="form-control">
+                            </td>
+                            <td class="tdw-xml">
+                                <label class="control-label td-xml">移动端是否启用</label>
+                                <input type="checkbox" class="mid-xml">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tdz-xml">
+                                <label class="control-label td-xml">字段是否只读</label>
+                            </td>
+                            <td class="tdk-xml" colspan="3">
+                                <div class="radio left-xml">
+                                    <input id="demo-inline-form-radio" class="magic-radio" type="radio" name="inline-form-radio1"
+                                           checked>
+                                    <label for="demo-inline-form-radio">可写</label>
+
+                                    <input id="demo-inline-form-radio3" class="magic-radio" type="radio"
+                                           name="inline-form-radio1">
+                                    <label for="demo-inline-form-radio3">只读</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary btnPop" type="button">保存</button>
+        <button class="btn btn-default btnPop" type="button"
+                onclick="javascript:$.P8.common().pop_close();">
+            关闭
+        </button>
+    </div>
+</body>
+
+
+</html>

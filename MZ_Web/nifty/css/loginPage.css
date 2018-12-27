@@ -1,0 +1,522 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*登录页面一*/
+.bgOne{
+    width: 640px;
+    height: 420px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-320px;
+    margin-top:-210px;
+}
+.bgOne .title{
+    height: 38px;
+    text-align: center;
+    font-size: 38px;
+    color: #3a3f53;
+    margin-bottom: 40px;
+}
+.bgOne .content{
+    width: 640px;
+    height: 342px;
+    box-shadow:4px 4px 10px  0px #999696;
+}
+.bgOne .content .contentL{
+    width: 324px;
+    height: 342px;
+    float: left;
+}
+.bgOne .content .contentL .imgOne{
+    float: left;
+    width: 160px;
+    height: 170px;
+    margin-right: 2px;
+}
+.bgOne .content .contentR{
+    width: 314px;
+    height: 342px;
+    float: left;
+    padding-top: 80px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f1f2f6;
+}
+.bgOne .content .contentR .login{
+    width: 267px;
+    height: 12px;
+    margin-bottom: 20px;
+}
+.bgOne .content .contentR .form-group .form-control,.bgOne .content .contentR .btn-block{
+    border-radius: 4px;
+}
+.bgOne .contentR form .form-group{
+    position: relative;
+}
+.bgOne .contentR form .form-group input{
+    padding-left: 42px;
+}
+.bgOne .contentR form .icon1,.bgOne .contentR form .icon2{
+    width: 30px;
+    height: 29px;
+    border-right: 1px solid #e9e9e9;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    background:url("../img/loginPage/3.png") no-repeat center;
+}
+.bgOne .contentR form .icon2{
+    background: url("../img/loginPage/6.png") no-repeat center;
+}
+.bgOne .content .contentR .form-group,.bgOne .content .contentR .pad-btm,.bgOne .content .contentR .btn-block{
+    width: 190px;
+}
+.bgOne .content .contentR form{
+    margin-left: 40px;
+}
+
+.bgOne .content .contentR .btn-block{
+    height: 30px;
+    font-size: 12px;
+}
+.contentBottom{
+    position: absolute;
+    bottom: 80px;
+    left:50%;
+    margin-left: -165px;
+    color: #000;
+}
+
+/*登录页面二*/
+.bgTwo{
+    width: 340px;
+    height: 280px;
+    background-color: #fff;
+    position:absolute;
+    top:56%;
+    left:50%;
+    margin-left:-170px;
+    margin-top:-140px;
+    text-align: center;
+    box-shadow: 0 3px 20px  #a3a6a9;
+}
+.bgTwo .title{
+    width: 340px;
+    margin:20px 0 45px 0;
+    height: 20px;
+}
+.bgTwo .title .cont{
+    font-size: 20px;
+    color: #0c4191;
+    display: inline-block;
+    width: 160px;
+    word-wrap: break-word;
+    font-weight: bold;
+}
+.bgTwo .title .left img,.bgTwo .title .right img{
+    width: 80px;
+    height: 1px;
+}
+.bgTwo .title .right{
+}
+
+.bgTwo .content{
+    width: 210px;
+    text-align: center;
+    margin-left: 65px;
+}
+.bgTwo .content form input,.bgTwo .content form button{
+    border-radius: 6px;
+}
+.bgTwo .content form input{
+    box-shadow: inset 0px 2px 5px 0 #a3a6a9;
+    background-color: #fff;
+    color: #010101;
+}
+.bgTwo .content form .form-control:focus{
+    background-color: #f5faff;
+}
+
+/*登录页面三*/
+.contentBottom1{
+    bottom: 70px;
+}
+.bgThree{
+    margin-top: 400px;
+    height: 242px;
+    width: 700px;
+    background-color: #fff;
+    position:absolute;
+    left:50%;
+    margin-left: -350px;
+    text-align: center;
+}
+.bgThree .contentL{
+    width: 298px;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #dfe2e3;
+    text-align: center;
+}
+.bgThree .contentL .logo{
+    margin:35px 0 60px 0;
+}
+.bgThree .contentL .logo img{
+    width: 169px;
+    height: 48px;
+}
+.bgThree .contentL .title{
+    font-size: 24px;
+    color: #010101;
+}
+.bgThree .contentR{
+    width: 400px;
+    float: left;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+.bgThree .contentR form{
+    width: 300px;
+    margin-top: 20px;
+}
+.bgThree .contentR form .form-group{
+    position: relative;
+}
+.bgThree .contentR form .icon1,.bgThree .contentR form .icon2{
+    width: 50px;
+    height: 42px;
+    border-right: 1px solid #e9e9e9;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    background:url("../img/loginPage/2.png") no-repeat center;
+}
+.bgThree .contentR form .icon2{
+    background: url("../img/loginPage/1.png") no-repeat center;
+}
+.bgThree .contentR form input,.bgThree .contentR form button{
+    border-radius: 3px;
+    height: 44px;
+}
+.bgThree .contentR form input{
+    color: #221f1f;
+    font-size: 14px;
+    padding-left: 62px;
+}
+.bgThree .contentR form button{
+    font-size: 16px;
+}
+
+/*登录页面四*/
+.bgFour{
+    width: 350px;
+    height: 340px;
+    position: absolute;
+    top:42.5%;
+    left:50%;
+    margin-left:-175px;
+    margin-top:-170px;
+    text-align: center;
+}
+.contentBottom2{
+    bottom: 50px;
+}
+.bgFour .title{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Microsoft YaHei";
+    margin-bottom: 15px;
+}
+.bgFour img{
+    width: 350px;
+    height:1px;
+    margin-bottom: 25px;
+}
+.bgFour .content{
+
+    width: 350px;
+    height: 278px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.3);
+    box-shadow: 0 3px 5px #a3a6a9;
+
+}
+.bgFour .content form{
+    width: 200px;
+    margin: 70px 0 0 75px;
+    box-sizing: border-box;
+}
+.bgFour .content form input,.bgFour .content form button{
+    border-radius: 4px;
+    font-size: 12px;
+}
+.bgFour .content form input{
+    padding-left: 42px;
+}
+.bgFour .content form .pad-btm{
+    color: #fff;
+    padding-bottom: 0px;
+}
+.bgFour .content form .form-group{
+    position: relative;
+}
+.bgFour .content form .icon1,.bgFour .content form .icon2{
+    width: 30px;
+    height: 29px;
+    border-right: 1px solid #e9e9e9;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    background:url("../img/loginPage/4.png") no-repeat center;
+}
+.bgFour .content form .icon2{
+    background: url("../img/loginPage/5.png") no-repeat center;
+}
+
+/*登录页面五*/
+.bgFive{
+    width: 350px;
+    height: 236px;
+    position: absolute;
+    top:40%;
+    left:50%;
+    margin-left:-175px;
+    margin-top:-118px;
+    text-align: center;
+}
+.bgFive .title{
+    color: #fefefe;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Microsoft YaHei";
+    margin-bottom: 20px;
+}
+.bgFive .content{
+    width: 350px;
+    height: 200px;
+    border: 1px solid rgba(255,255,255,0.5);
+    padding-top: 20px;
+}
+.bgFive .content .top{
+    width: 100%;
+    font-size: 14px;
+    color: #fefefe;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.bgFive .content form{
+    width: 168px;
+    margin-left: 105px;
+}
+.bgFive .content form button{
+    width: 100px;
+    font-size: 14px;
+    background-color: #f82626;
+    border: 1px solid #f82626;
+}
+.bgFive .content form input{
+    font-size: 12px;
+}
+.bgFive .content form .pad-btm{
+    color: #fff;
+    padding-bottom: 0px;
+}
+.bgFive .content form .form-group{
+    position: relative;
+}
+.bgFive .content form .ziti,.bgFive .content form .ziti{
+    position: absolute;
+    left: -45px;
+    top: 5px;
+    color: #fefefe;
+    font-size: 12px;
+}
+.bgFive .content form .magic-checkbox:checked + label:before{
+    border-color:#f82626;
+    background-color: #f82626;
+}
+.bgFive .content form .form-control:focus{
+    border-color: #f82626;
+}
+.contentBottom3{
+    bottom: 30px;
+}
+
+/*登录页面六*/
+.bgSix{
+    width: 480px;
+    height: 475px;
+    position: absolute;
+    top:34%;
+    left:50%;
+    margin-left:-240px;
+    margin-top:-235px;
+    text-align: center;
+}
+.bgSix .teTitle{
+    margin-bottom: 222px;
+}
+.bgSix .teTitle h1,.teTitle h2{
+    font-size: 22px;
+    color: #4159b4;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.teTitle h2{
+    font-size: 20px;
+}
+.contentBottom4{
+    bottom: 110px;
+}
+.bgSix .content{
+    width: 480px;
+    height: 300px;
+    background-color: rgba(255,255,255,0.4);
+    border: 1px solid #a5a4b4;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    position: relative;
+}
+.bgSix .content .contentOn{
+    width: 440px;
+    height: 260px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #fff;
+}
+.bgSix .content .contentOn form{
+    margin: 50px 0 0 90px;
+    width: 260px;
+}
+.bgSix .content form input{
+    padding-left: 42px;
+    font-size: 12px;
+}
+.bgSix .content form .form-group{
+    position: relative;
+}
+.bgSix .content form .pad-btm{
+    padding-bottom: 10px;
+}
+.bgSix .content form .icon1,.bgSix .content form .icon2{
+    width: 30px;
+    height: 29px;
+    border-right: 1px solid #e9e9e9;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    background:url("../img/loginPage/7.png") no-repeat center;
+    background-color: #4c5cb1;
+}
+.bgSix .content form .icon2{
+    background: url("../img/loginPage/8.png") no-repeat center;
+    background-color: #4c5cb1;
+}
+.bgSix .content form .magic-checkbox:checked + label:before{
+    border-color:#4c5cb1;
+    background-color: #4c5cb1;
+}
+.bgSix .content form .form-control:focus{
+    border-color: #4c5cb1;
+}
+.bgSix .content form button{
+    color: #bdcbfa;
+    font-size: 14px;
+    background-color: #4c5cb1;
+    border: 1px solid #4c5cb1;
+}
+
+/*登录页面七*/
+.bgSeven{
+    width: 420px;
+    height: 296px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-210px;
+    margin-top:-133px;
+    text-align: center;
+    box-shadow: 0 10px 15px -3px #d6d6d6;
+}
+.bgSeven .title{
+    height: 100px;
+    width: 100%;
+    background-color: #4c5cb1;
+    box-shadow: inset 0px 0px 13px 2px #fff;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.bgSeven .title h1,.bgSeven .title h2{
+    font-size: 20px;
+    color: #dbf3fd;
+    font-weight: bold;
+    font-family: "Microsoft YaHei";
+    margin-top: 0px;
+}
+.bgSeven .title h2{
+    font-size: 16px;
+}
+.bgSeven .content{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c9c9c9;
+    border-top: none;
+}
+.bgSeven .content form{
+    width: 260px;
+    margin-left:80px;
+    box-sizing: border-box;
+}
+.bgSeven .content form input{
+    padding-left: 42px;
+    font-size: 12px;
+}
+.bgSeven .content form .form-group{
+    position: relative;
+}
+.bgSeven .content form .icon1,.bgSeven .content form .icon2{
+    width: 30px;
+    height: 29px;
+    border-right: 1px solid #e9e9e9;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+    background:url("../img/loginPage/7.png") no-repeat center;
+    background-color: #4c5cb1;
+}
+.bgSeven .content form .icon2{
+    background: url("../img/loginPage/8.png") no-repeat center;
+    background-color: #4c5cb1;
+}
+.bgSeven .content form .magic-checkbox:checked + label:before{
+    border-color:#4c5cb1;
+    background-color: #4c5cb1;
+}
+.bgSeven .content form .form-control:focus{
+    border-color: #4c5cb1;
+}
+.bgSeven .content form button{
+    color: #bdcbfa;
+    font-size: 14px;
+    background-color: #4c5cb1;
+    border: 1px solid #4c5cb1;
+}
+
+
+
+
+
+
+
+
+
+

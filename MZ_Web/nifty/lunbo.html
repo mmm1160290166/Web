@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片轮播</title>
+    <style type="text/css">
+        *{ padding: 0; margin: 0;}
+        li{ list-style-type: none;}
+        /*body{ margin: 50px;}*/
+        a img{ border:none;}
+        .wrap{
+            width: 200px;
+            height: 160px;
+            border:none;
+            position:relative;
+            overflow: hidden;
+        }
+        .wrap ul{
+            width: 1000px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .wrap ul li{
+            float: left;
+            width: 200px;
+        }
+        .wrap .bgcO{
+            position: absolute;
+            bottom: 0px;
+            height: 16px;
+            width: 100%;
+            background-color:  rgba(0,0,0,0.5);
+        }
+        .wrap ol{
+            position: absolute;
+            bottom: 2px;
+            right: 0px;
+        }
+        .wrap ol li{
+            float: left;
+            width: 12px;
+            height: 12px;
+            line-height: 10px;
+            text-align: center;
+            border: none;
+            border-radius: 50%;
+            background-color: #c6c6c6;
+            color: #0c0c0c;
+            font-size: 10px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+        .wrap ol li.current{
+            background-color: #4ca2fb;
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <ul>
+        <li><a href="#"><img src="img/slidePic.png" alt=""></a></li>
+        <li><a href="#"><img src="img/slidePic.png" alt=""></a></li>
+        <li><a href="#"><img src="img/slidePic.png" alt=""></a></li>
+        <li><a href="#"><img src="img/slidePic.png" alt=""></a></li>
+        <li><a href="#"><img src="img/slidePic.png" alt=""></a></li>
+    </ul>
+    <div class="bgcO">
+        <ol>
+            <li class="current">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ol>
+    </div>
+    <!--<p class="introduce">111111</p>-->
+</div>
+<script src="js/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var oul = $('.wrap ul');
+        var ali = $('.wrap ul li');
+        var numLi = $('.wrap ol li');
+        var aliWidth = $('.wrap ul li').eq(0).width();
+        var _now = 0;  //这个是控制数字样式的计数器
+        var _now2 = 0; //这个是控制图片运动距离的计数器
+        var timeId;
+        numLi.click(function(){
+            var index = $(this).index();
+            _now = index;
+            _now2=index;
+            $(this).addClass('current').siblings().removeClass();
+            oul.animate({'left':-aliWidth*index},500);
+        });
+        /**
+         * [slider description] 图片运动的函数
+         * @return {[type]} [description] 无返回值
+         */
+        function slider(){
+            if(_now==numLi.size()-1){
+                ali.eq(0).css({
+                    'position':'relative',
+                    'left': oul.width()
+                });
+                _now=0;
+            }else{
+                _now++;
+            }
+            _now2++;
+            numLi.eq(_now).addClass('current').siblings().removeClass();
+            oul.animate({'left':-aliWidth*_now2},500,function(){
+                if(_now==0){
+                    ali.eq(0).css('position','static');
+                    oul.css('left',0);
+                    _now2=0;
+                }
+            });
+        }
+        timeId = setInterval(slider,1500);
+        $('.wrap').hover(function(){
+            clearInterval(timeId);
+        },function(){
+            timeId = setInterval(slider,1500);
+        });
+
+    });
+</script>
+</body>
+</html>

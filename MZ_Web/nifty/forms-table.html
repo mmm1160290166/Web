@@ -1,0 +1,471 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>测试</title>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/bootstrap-table/bootstrap-table.js"></script>
+    <script src="plugins/bootstrap-table/locale/bootstrap-table-zh-CN.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/nifty.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/themify-icons/themify-icons.min.css">
+    <link href="css/demo/nifty-demo-icons.min.css" rel="stylesheet">
+    <link href="css/demo/nifty-demo.min.css" rel="stylesheet">
+    <link href="plugins/bootstrap-table/bootstrap-table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/genaral.css">
+    <link rel="stylesheet" href="css/nifty.p8.css">
+    <script src="js/nifty.min.js"></script>
+    <script src="js/demo/nifty-demo.min.js"></script>
+
+
+
+    <!-- <style>
+        #loading {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            z-index: 1;
+            margin-top: 0px;
+            top: 0px;
+            margin: 0 auto;
+        }
+
+        #loading-center {
+            width: 100%;
+            height: 100%;
+            /*position: relative;*/
+        }
+
+        #loading-center-absolute {
+            /*position: absolute;*/
+            left: 50%;
+            top: 50%;
+            /*height: 150px;*/
+            /*width: 150px;*/
+            /*   margin-top: -75px;
+        margin-left: -75px; */
+            -moz-border-radius: 50% 50% 50% 50%;
+            -webkit-border-radius: 50% 50% 50% 50%;
+            border-radius: 50% 50% 50% 50%;
+        }
+
+        .object {
+            width: 5px;
+            height: 5px;
+            background-color: #000;
+            position: absolute;
+            -moz-border-radius: 50% 50% 50% 50%;
+            -webkit-border-radius: 50% 50% 50% 50%;
+            border-radius: 50% 50% 50% 50%;
+            -webkit-animation: animate 0.8s infinite;
+            animation: animate 0.8s infinite;
+        }
+
+
+        #object_one {
+            top: 23px;
+            left: 0px;
+        }
+
+        #object_two {
+            top: 8px;
+            left: 5px;
+            -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
+        }
+
+        #object_three {
+            top: 0px;
+            left: 22px;
+            -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+        }
+
+        #object_four {
+            top: 8px;
+            left: 40px;
+            -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+        }
+
+        #object_five {
+            top: 23px;
+            left: 45px;
+            -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+        }
+
+        #object_six {
+            top: 38px;
+            left: 38px;
+            -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+        }
+
+        #object_seven {
+            top: 45px;
+            left: 22px;
+            -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+        }
+
+        #object_eight {
+            top: 37px;
+            left: 7px;
+            -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+        }
+
+
+
+
+        @@-webkit-keyframes animate {
+
+            25% {
+                -ms-transform: scale(1.5);
+                -webkit-transform: scale(1.5);
+                transform: scale(1.5);
+            }
+
+
+            75% {
+                -ms-transform: scale(0);
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+        }
+
+        @@keyframes animate {
+            50% {
+                -ms-transform: scale(1.5,1.5);
+                -webkit-transform: scale(1.5,1.5);
+                transform: scale(1.5,1.5);
+            }
+
+            100% {
+                -ms-transform: scale(1,1);
+                -webkit-transform: scale(1,1);
+                transform: scale(1,1);
+            }
+        }
+    </style>  -->
+
+
+</head>
+<body>
+    <div id="page-content">
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">Basic Data Tables with responsive plugin</h3>
+            </div>
+            <div class="panel-body" style="padding-bottom: 0px;">
+
+                <div id="toolbar" class="btn-group">
+                    <button id="btn_add" type="button" class="btn btn-default">
+                        <span class="ti-plus" aria-hidden="true"></span>
+                        <div style="display:inline-block;margin-left:2px">新增表</div>
+                    </button>
+                    <div class="btn-group">
+                        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            <span class="ti-menu-alt"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <table id="tb_departments" data-reorderable-columns="true" class="tabx-xml"></table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+
+    $(function () {
+
+
+
+        //1.初始化Table
+        //var oTable = new TableInit();
+        //oTable.Init();
+        TableInit();
+        //oTable.append([{ Name: "测试", ParentName: "测试名称", Level: 1, Desc: "内二用" }, { Name: "测试", ParentName: "测试名称", Level: 1, Desc: "内二用" }]);
+
+        //2.初始化Button的点击事件
+        var oButtonInit = new ButtonInit();
+        oButtonInit.Init();
+        //$('#tb_departments').bootstrapTable('append', [{ Name: "测试", ParentName: "测试名称", Level: 1, Desc: "内二用" }, { Name: "测试", ParentName: "测试名称", Level: 1, Desc: "内二用" }]);//{ "Name": "测试", "ParentName": "测试名称", "Level": "1", "Desc": "内二用" }
+
+        $("#btn_add").on("click", function () {
+            location.href = '../SYSMA/TableCreate';
+
+        })
+
+
+    });
+
+
+
+
+    var TableInit = function () {
+
+        //var oTableInit = new Object();
+        //初始化Table
+        //oTableInit.Init = function () {
+
+        $('#tb_departments').bootstrapTable({
+            url: 'http://192.168.168.68:8086/api/SYSMA/PageList',         //请求后台的URL（*）
+            //url: SysURL + "/api/SYSMA/PageList",
+            // data: [{ Name: "测试", ParentName: "测试名称", Level: 1, Desc: "内二用" }, { Name: "测试", ParentName: "测试名称", Level: 1, Desc: "内二用" }],
+            //url: "http://192.168.168.217:8010/ajax/post",
+            // headers: { "action": "api/SYSMA/PageList", "usercode": Session.Account },
+            dataType: 'json',
+            contentType: "application/x-www-form-urlencoded",
+            method: 'POST',                      //请求方式（*）
+            //ajaxOptions:{ headers : { "action": "api/SYSMA/PageList", "usercode": "sa" }},
+            //url: '',
+            toolbar: '#toolbar',                //工具按钮用哪个容器
+            striped: false,                      //是否显示行间隔色javascript:void(0);
+            cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+            pagination: true,                   //是否显示分页（*）
+            //onlyInfoPagination:true,
+            showFooter: false,
+            sortable: true,                     //是否启用排序
+            sortOrder: "asc",                   //排序方式
+            //responseHandler: responseHandler,
+            queryParams: queryParams,//oTableInit.queryParams,//传递参数（*）
+            uniqueId: "index",
+            sidePagination: "server",           //分页方式：client客户端分页，server服务端分页（*）
+            pageNumber: 1,                       //初始化加载第一页，默认第一页
+            pageSize: 10,                       //每页的记录行数（*）
+            pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
+            search: true,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
+            strictSearch: true,
+            showColumns: true,                  //是否显示所有的列
+            showRefresh: true,                  //是否显示刷新按钮
+            minimumCountColumns: 2,             //最少允许的列数
+            clickToSelect: true,                //是否启用点击选中行
+            //height: 500,                        //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
+            //uniqueId: "id",                     //每一行的唯一标识，一般为主键列
+            //exportDataType: 'all',
+            //            height: $(window).height()-20,
+            width: $(window).width(),
+            showToggle: false,                    //是否显示详细视图和列表视图的切换按钮
+            showPaginationSwitch: false,
+            editable: false,//开启编辑模式
+            cardView: false,                    //是否显示详细视图
+            detailView: false,                   //是否显示父子表
+            columns: [
+                { title: 'ID', field: 'ID', visible: false, align: 'center', valign: 'middle' },
+                //{
+                //    field: "index", title: "", align: "center", visible: false, edit: false, formatter: function (value, row, index) {
+                //        return row.index = index + 1; //返回行号
+                //    }
+                //},
+                {
+                    field: 'FORMNO',
+                    title: '程序代码',
+                    align: "center",
+                    valign: "middle",
+                    width: "10%",
+                    height: "10px"//,
+                    //cellStyle:  function (row, index) {style: "height:10px"},
+                    //edit: { required: true, type: 'text' }
+                    //formatter: function (value, row, index) {
+
+                    //    var e = '<input type="text"  class="form-control" /> ';
+                    //    return e;
+                    //}
+                },
+                {
+                    field: 'MA001',
+                    title: '表名',
+                    align: "center",
+                    valign: "middle",
+                    width: "15%",
+                    height: "10px"//,
+                    //cellStyle:  function (row, index) {style: "height:10px"},
+                    //edit: { required: true, type: 'text' }
+                    //formatter: function (value, row, index) {
+
+                    //    var e = '<input type="text"  class="form-control" /> ';
+                    //    return e;
+                    //}
+                }, {
+                    field: 'MA002',
+                    title: '中文名',
+                    align: "center",
+                    valign: "middle",
+                    width: "15%",
+                    height: "10px"
+                    //formatter: function (value, row, index) {
+                    //    var e = '<select class="form-control"><option value="varchar">字符串型</option><option value="int">数值型</option><option value="float">浮点型</option><option value="bool">布尔型</option></select>';
+                    //    return e;
+                    //}
+                }, {
+                    field: 'MA004',
+                    title: '主/从表',
+                    align: "center",
+                    valign: "middle",
+                    width: "10%",
+                    height: "10px",
+                    formatter: function (value, row, index) {
+                        var e = '主表';
+                        if (value == "1") {
+                            e = '从表';
+                        }
+
+                        return e;
+                    }
+                }
+            ,
+
+            {
+                field: 'MA003',
+                title: '描述',
+                align: "center",
+                valign: "middle",
+                width: "20%",
+                height: "10px"
+                //formatter: function (value, row, index) {
+                //    var e = '<input type="checkbox"  checked="true"/> ';
+                //    return e;
+                //}
+            }
+            , {
+                field: '',
+                title: '操作',
+                align: "center",
+                valign: "middle",
+                height: "10px",
+                width: "3%",
+                formatter: function (value, row, index) {
+                    return "<button onmouseover=\"javascript:$('.click-xml').hide();$(this).next().show();\" class=\"ti-more-alt trans-xml\"></button>"
+                         + "<div class=\"click-xml\" onmouseover=\"javascript:$(this).show();\" onmouseout=\"javascript:$(this).hide();\" style=\"display: none;\">"
+                         + "<button type='button' class='btn btn-default btn2-xml' onclick=\"EditRow('" + row.FORMNO + "','" + row.MA001 + "')\" ><span class='ti-pencil-alt' aria-hidden='true'></span>属性</button>"
+                         + "<button  type='button' class='btn btn-default btn2-xml' onclick='DeleteRow(" + row.index + ")' ><span class='ti-trash' aria-hidden='true'></span>删除</button>"
+                         + "</div>";
+                }
+            }],
+            onClickCell: function (field, value, row, $element) {
+
+                //alert(1)
+                //alert(JSON.stringify(row))
+                //alert(field + "--" + value + "--" + row.id + "--" + $element.text())
+                //$("#tb_departments").bootstrapTable('remove', { field: field, values: value });
+                return false;
+            },
+
+            formatLoadingMessage: function () {
+                //return "<div id='loading'><div id='loading-center'><div id='loading-center-absolute'><div class='object' id='object_one'></div><div class='object' id='object_two'></div><div class='object' id='object_three'></div><div class='object' id='object_four'></div><div class='object' id='object_five'></div><div class='object' id='object_six'></div><div class='object' id='object_seven'></div><div class='object' id='object_eight'></div></div></div></div>";
+                return "数据加载中..."
+            },
+            formatNoMatches: function () {  //没有匹配的结果
+                return '暂无记录';
+            },
+            onLoadSuccess: function (data) {
+                //alert('成功')
+                //$("[data-toggle='tooltip']").tooltip();
+
+            }
+            ,
+            rowStyle: function rowStyle(row, index) {
+                return {
+                    css: { "padding": "0px" }
+                };
+            }
+
+
+        });
+        //};
+
+        //////得到查询的参数
+        //oTableInit.queryParams = function (params) {
+        //    var temp = {   //这里的键的名字和控制器的变量名必须一直，这边改动，控制器也需要改成一样的
+        //        limit: params.limit,   //页面大小
+        //        offset: params.offset//,  //页码
+        //        //pageindex: this.pageNumber,
+        //        //pageSize: this.pageSize
+        //        //departmentname: $("#txt_search_departmentname").val(),
+        //        //statu: $("#txt_search_statu").val()
+        //    };
+        //    return temp;
+        //};
+        //return oTableInit;
+    };
+
+    function queryParams(params) {
+        var param = {
+            //orgCode: $("#orgCode").val(),
+            //userName: $("#userName").val(),
+            //startDate: $("#startDate").val(),
+            //endDate: $("#endDate").val(),
+            limit: this.limit, // 页面大小
+            offset: this.offset, // 页码
+            pageindex: this.pageNumber,
+            pageSize: this.pageSize
+        }
+        return param;
+    }
+
+    //function queryParams(params) {
+    //    var param = {
+    //        //orgCode: $("#orgCode").val(),
+    //        //userName: $("#userName").val(),
+    //        //startDate: $("#startDate").val(),
+    //        //endDate: $("#endDate").val(),
+    //        limit: this.limit, // 页面大小
+    //        offset: this.offset, // 页码
+    //        pageindex: this.pageNumber,
+    //        pageSize: this.pageSize
+    //    }
+    //    return param;
+    //}
+
+    // 用于server 分页，表格数据量太大的话 不想一次查询所有数据，可以使用server分页查询，数据量小的话可以直接把sidePagination: "server"  改为 sidePagination: "client" ，同时去掉responseHandler: responseHandler就可以了，
+    //function responseHandler(res) {
+    //    if (res) {
+    //        return {
+    //            "rows": res.result,
+    //            "total": res.totalCount
+    //        };
+    //    } else {
+    //        return {
+    //            "rows": [],
+    //            "total": 0
+    //        };
+    //    }
+    //}
+
+
+    var ButtonInit = function () {
+        var oInit = new Object();
+        var postdata = {};
+
+        oInit.Init = function () {
+
+        };
+
+        return oInit;
+    };
+
+    function EditRow(FORMNO, MA001) {
+        location.href = "../SYSMA/AttributeManager?FORMNO=" + FORMNO + "&MA001=" + MA001;
+    }
+
+</script>

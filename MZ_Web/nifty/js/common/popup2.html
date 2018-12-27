@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <!--css引入  -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/nifty.min.css">
+    <link rel="stylesheet" href="../../css/demo/nifty-demo-icons.min.css">
+    <link rel="stylesheet" href="../../css/demo/nifty-demo.min.css">
+    <link rel="stylesheet" href="../../plugins/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="../../css/nifty.p8.css">
+    <link rel="stylesheet" href="../../css/genaral.css">
+    <!--js引入  -->
+    <script src="../../plugins/pace/pace.min.js"></script>
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/nifty.min.js"></script>
+    <script src="../../js/demo/nifty-demo.min.js"></script>
+    <script src="p8.common.js" type="text/javascript"></script>
+</head>
+<body class="hidden-xml padding0">
+<div class="comsib-xml auto-xml">
+    <div class="panel-xml">
+        <div class="panel-heading">
+            <h3 class="panel-title">Basic Data Tables with responsive plugin</h3>
+        </div>
+        <div class="html-xml">
+            <div class="btn-group">
+                <button id="btn_add" type="button" class="btn btn-default">
+                    <span class="ti-plus" aria-hidden="true"></span>
+                    <div style="display:inline-block;margin-left:2px">新增表</div>
+                </button>
+                <div class="btn-group">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="ti-menu-alt"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rig-xml">
+                <div class="pull-right search"><input class="form-control" type="text" placeholder="搜索"></div>
+                <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="glyphicon demo-pli-repeat-2"></span>
+                </button>
+                <div class="keep-open btn-group" title="列">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-expanded="true"><i class="glyphicon demo-pli-check"></i> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <label><input type="checkbox"> ID</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox"> 程序代码</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox"> 表名</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox"> 中文名</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox"> 主/从表</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox"> 描述</label>
+                        </li>
+                        <li>
+                            <label><input type="checkbox"> 操作</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pad-xml">
+            <table class="table-xml table table-bordered border-xml" id="demo-foo-addrow">
+                <thead>
+                <tr>
+                    <th class="wid10-xml center-xml">
+                        <div class="th-inner">程序代码</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th class="wid15-xml center-xml">
+                        <div class="th-inner ">表名</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th class="wid15-xml center-xml">
+                        <div class="th-inner ">中文名</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th class="wid10-xml center-xml">
+                        <div class="th-inner ">主/从表</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                    <th class="wid20-xml center-xml">
+                        <div class="th-inner ">描述</div>
+                        <div class="fht-cell"></div>
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="center-xml">sys</td>
+                    <td class="center-xml">SYSMD</td>
+                    <td class="center-xml">数据源分类</td>
+                    <td class="center-xml">主表</td>
+                    <td class="center-xml">-</td>
+                </tr>
+                <tr>
+                    <td class="center-xml">sys</td>
+                    <td class="center-xml">CKTESTA</td>
+                    <td class="center-xml">测试表单A</td>
+                    <td class="center-xml">从表</td>
+                    <td class="center-xml">-</td>
+                </tr>
+                <tr>
+                    <td class="center-xml">sys</td>
+                    <td class="center-xml">CKTESTB</td>
+                    <td class="center-xml">测试表单B</td>
+                    <td class="center-xml">从表</td>
+                    <td class="center-xml">-</td>
+                </tr>
+                <tr>
+                    <td class="center-xml">2010101</td>
+                    <td class="center-xml">BASMA</td>
+                    <td class="center-xml">国家设置</td>
+                    <td class="center-xml">主表</td>
+                    <td class="center-xml">-</td>
+                </tr>
+                <tr>
+                    <td class="center-xml">sys</td>
+                    <td class="center-xml">testTB</td>
+                    <td class="center-xml">测试表</td>
+                    <td class="center-xml">从表</td>
+                    <td class="center-xml">-</td>
+                </tr>
+                <tr>
+                    <td class="center-xml">sys</td>
+                    <td class="center-xml">testTB</td>
+                    <td class="center-xml">测试表</td>
+                    <td class="center-xml">从表</td>
+                    <td class="center-xml">-</td>
+                </tr><tr>
+                    <td class="center-xml">sys</td>
+                    <td class="center-xml">testTB</td>
+                    <td class="center-xml">测试表</td>
+                    <td class="center-xml">从表</td>
+                    <td class="center-xml">-</td>
+                </tr><tr>
+                    <td class="center-xml">sys</td>
+                    <td class="center-xml">testTB</td>
+                    <td class="center-xml">测试表</td>
+                    <td class="center-xml">从表</td>
+                    <td class="center-xml">-</td>
+                </tr><tr>
+                    <td class="center-xml">sys</td>
+                    <td class="center-xml">testTB</td>
+                    <td class="center-xml">测试表</td>
+                    <td class="center-xml">从表</td>
+                    <td class="center-xml">-</td>
+                </tr><tr>
+                    <td class="center-xml">sys</td>
+                    <td class="center-xml">testTB</td>
+                    <td class="center-xml">测试表</td>
+                    <td class="center-xml">从表</td>
+                    <td class="center-xml">-</td>
+                </tr><tr>
+                    <td class="center-xml">sys</td>
+                    <td class="center-xml">testTB</td>
+                    <td class="center-xml">测试表</td>
+                    <td class="center-xml">从表</td>
+                    <td class="center-xml">-</td>
+                </tr><tr>
+                    <td class="center-xml">sys</td>
+                    <td class="center-xml">testTB</td>
+                    <td class="center-xml">测试表</td>
+                    <td class="center-xml">从表</td>
+                    <td class="center-xml">-</td>
+                </tr><tr>
+                    <td class="center-xml">sys</td>
+                    <td class="center-xml">testTB</td>
+                    <td class="center-xml">测试表</td>
+                    <td class="center-xml">从表</td>
+                    <td class="center-xml">-</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pad-xml">
+            <span class="pagination-info">显示第 1 到第 5 条记录，总共 5 条记录</span>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary btnPop" type="button">保存</button>
+    <button class="btn btn-default btnPop" type="button"
+            onclick="javascript:$.P8.common().pop_close();">关闭
+    </button>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

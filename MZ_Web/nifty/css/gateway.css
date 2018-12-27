@@ -1,0 +1,514 @@
+/*整体样式开始*/
+.edit{
+     padding-top: 0;
+     margin-left: 0;
+     background-color: #fff;
+ }
+.view .box{
+    margin-bottom: 20px;
+}
+ul{
+    list-style: none;
+}
+.newsList .non{
+    background: none;
+}
+header{
+    height: 60px;
+    border-bottom:1px solid #dadada;
+    padding-left: 8px;
+    line-height: 60px;
+    position: absolute;
+    width:100%;
+}
+.edit .demo{
+    margin-left: 190px;
+    border: 0;
+    padding: 0;
+}
+header i{
+    font-size: 24px;
+    margin-right: 5px;
+}
+header span{
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+}
+.sidebar-nav{
+    top:60px;
+    bottom: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.posC{
+    position: absolute;
+    top: 60px;
+    bottom: 50px;
+    overflow: auto;
+    width: 100%;
+}
+.edit .demo:after{
+    content: none;
+}
+.edit .demo .row:before{
+    content: none;
+}
+.edit .column:after{
+    content: none;
+}
+.sidebar-nav{
+    background-color: #fff;
+}
+.sidebar-nav .nav-header{
+    color:#798897;
+}
+/*整体样式结束*/
+
+/*业绩统计样式开始*/
+#mainBox{
+    position: initial;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+#mainBox .mHd{
+    border-bottom: 0px;
+}
+.formtitle .china{
+    font-size: 20px;
+    font-style:normal;
+    color:#38a0f4;
+    border-bottom:5px solid #fff;
+    font-weight: bold;
+    padding-right: 10px;
+}
+.formtitle .china em{
+    font-size: 18px;
+}
+.formtitle .english{
+    font-size: 16px;
+    color:#38a0f4;
+    font-weight: normal;
+}
+.edit .icon{
+    font-size:16px;
+    color:#d2d2d2;
+    font-weight: normal;
+}
+.colorX{
+    background-color: transparent;
+    opacity: 1!important;
+}
+.ti-move:before{
+    color: #d2d2d2;
+}
+.newsList{
+    margin-bottom: 0;
+}
+.demo .box .view{
+    padding-top: 0px;
+}
+.marRight{
+    margin-right: 90px;
+}
+.edit .demo .shezhi{
+    right: 32px;
+}
+.posIcon .colorX:hover{
+    background-color: #38a0f4;
+}
+.sidebar-nav .preview input{
+    top: 1px;
+    width: 130px;
+}
+.label{
+    padding: .2em 0.4em .3em;
+}
+.nav_tabxml{
+    border-bottom: 1px solid #ddd;
+}
+.nav_tabxml li{
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    border-bottom: none;
+    font-family: "Microsoft YaHei";
+    font-size: 12px;
+    color: #4e4d4d;
+    background-color: #e8e8e8;
+}
+.edit .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    border: none;
+    color: #4ca2fb;
+}
+.edit .nav-tabs>li.active{
+    background-color: #fff;
+}
+.mBd ul{
+    padding-left: 20px;
+}
+.mBd ul li {
+    margin-left: 5px;
+}
+.mBd .newsList{
+    padding-left: 0px;
+}
+.mBd .newsList li a,.mBd .newsList li span{
+    font-size: 12px;
+    color: #000;
+}
+/*.carouselDrag img{*/
+    /*width: 200px;*/
+    /*height: 160px;*/
+/*}*/
+.mBd .carouselDrag-z{
+    float: left;
+    display: inline-block;
+    padding: 10px 0px;
+}
+.mBd .carouselDrag-y{
+    padding:10px 0px 10px 210px;
+
+}
+/*.dragX .carouselDrag-y a{*/
+    /*float: left;*/
+/*}*/
+
+/*业绩统计样式结束*/
+
+/*新人入职样式开始*/
+.employee_title{
+    width: 300px;
+    height: 40px;
+    background-color: #e0ecfa;
+    line-height: 40px;
+    color: #666;
+    padding-left: 5px;
+}
+.employee_body{
+    height: 280px;
+    width: 300px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+.bodyOne{
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.bodyL{
+    height: 100%;
+    width: 70px;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    padding-top: 5px;
+}
+.bodyL img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin-bottom: 10px;
+}
+.bodName{
+    color: #000;
+}
+.bodyR{
+    margin-right: 10px;
+    float: right;
+    height: 100%;
+    width: 200px;
+}
+.bodyR p{
+    margin-top: 5px;
+    color: #a7a7a7;
+}
+.bodyR p:hover{
+    color: #000;
+}
+.bodyR div{
+    text-align: right;
+    margin-top: 25px;
+    color: #a7a7a7;
+}
+.mBd .emp{
+    padding-left: 0px;
+}
+/*新人入职样式结束*/
+
+
+/*验收新闻样式开始*/
+.report_body{
+    width: 360px;
+    height: 460px;
+    overflow: hidden;
+}
+.mBd .rep{
+    padding-left: 0px;
+    padding-top: 20px;
+}
+.repOne{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 15px;
+}
+.repL{
+    float: left;
+}
+.repL img{
+    width: 100px;
+    height: 60px;
+    margin-right: 15px;
+}
+.repR {
+    height: 100%;
+    float: left;
+    padding-top: 5px;
+    border-bottom: 1px dashed #c9c9c9;
+}
+.mar0{
+    margin-bottom: 0px;
+}
+.colo{
+    color:#38a0f4;
+    font-weight: bold;
+}
+.repR>p,.repR>div{
+    color:#4e4d4d;
+    line-height: 20px;
+}
+/*验收新闻样式结束*/
+
+
+/*外出登记样式开始*/
+.enregis_body{
+    height: 240px;
+    width: 100%;
+    overflow: hidden;
+}
+.newsList .dash{
+    border-bottom: 1px dashed #7c7c7c;
+    height: 23px;
+    line-height: 23px;
+}
+.newsList .dash .enregisName{
+    color: #ff0000;
+    display: inline-block;
+}
+.newsList .dash .zi{
+    color: #7c7c7c;
+}
+/*外出登记样式结束*/
+
+/*最新会议样式开始*/
+.Conference{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Conference thead tr{
+    height: 40px;
+    line-height: 40px;
+
+}
+.Conference thead tr th{
+    background-color: #f6f6f6;
+    color: #4e4d4d;
+    font-weight: normal;
+    font-size: 14px;
+}
+.Conference th,.Conference td{
+    border:  1px solid #ddd;
+    text-align: center;
+}
+.Conference tbody tr{
+    height: 30px;
+    line-height: 30px;
+}
+.Conference tbody tr td{
+    color: #010101;
+}
+.Conference thead .first{
+    width: 35%;
+}
+.Conference thead .second{
+    width: 15%;
+}
+.Conference thead .third,.Conference thead .fourth{
+    width: 25%;
+}
+.Conference tbody tr .teshu{
+    color: red;
+}
+/*最新会议样式结束*/
+
+/*项目日报样式开始*/
+.flLeft{
+    float: left;
+    width: 100%;
+    margin: 10px 0 0 40px;
+    width: initial;
+}
+.flLeft div{
+    text-align: left;
+    margin-top: 0px;
+    color: #4ca2fb;
+}
+.proHeader{
+    height: 40px;
+    background-color: #f6f6f6;
+    line-height: 40px;
+}
+.proHeader span{
+    color: #06308d;
+}
+.proHeader>span{
+    float: left;
+    margin-left: 15px;
+}
+.proHeader>div{
+    float: right;
+    margin-right: 100px;
+    margin-right: 100px;
+}
+.proBody{
+    padding-left: 15px;
+}
+.flL{
+    float: left;
+}
+.bodyOo .title{
+    color: #ff0000;
+}
+.bodyTt .title{
+    color: #008000;
+}
+.proBody ol,.proBody li{
+    list-style-type:decimal;
+    list-style-position:inside;
+}
+/*项目日报样式结束*/
+
+
+/*综合新闻样式开始*/
+#banner {
+    position: relative;
+    width: 200px;
+    height: 160px;
+    /*border: 1px solid #666;*/
+    overflow: hidden;
+}
+
+#banner_list img {
+    border: 0px;
+}
+
+#banner_bg {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    height: 16px;
+    /*filter: Alpha(Opacity=30);*/
+    /*opacity: 0.3;*/
+    z-index: 1000;
+    cursor: pointer;
+    width: 100%;
+}
+
+#banner_info {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    height: 22px;
+    color: #fff;
+    z-index: 1001;
+    cursor: pointer
+}
+
+#banner_text {
+    position: absolute;
+    width: 120px;
+    z-index: 1002;
+    right: 3px;
+    bottom: 3px;
+}
+
+#banner ul {
+    position: absolute;
+    z-index: 1002;
+    bottom: 2px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+#banner ul li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+    /*padding: 0px 8px;*/
+    float: left;
+    display: block;
+    color: #0c0c0c;
+    background-color: #c6c6c6;
+    cursor: pointer;
+    margin-left: 0px;
+    /*border: 1px solid #333;*/
+    font-size: 10px;
+    text-align: center;
+}
+
+#banner ul li.on {
+    background-color: #4ca2fb;
+    color: #fff;
+}
+
+#banner_list a {
+    position: absolute;
+}
+
+/*综合新闻样式结束*/
+
+/*预览事件*/
+.dis{
+    display: none;
+}
+/*图表设计*/
+.binxing{
+    width: 300px;
+    height: 300px;
+}
+.zhexian{
+    width: 500px;
+    height:320px;
+}
+
+
+/* 辉哥特别定制表格 */
+.specialHui > tbody > tr > td{
+    padding: 6px;
+    border: none;
+}
+.specialHui>thead>tr>th{
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

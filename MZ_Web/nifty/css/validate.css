@@ -1,0 +1,118 @@
+/*验证页面*/
+body {
+    background-color: #fff !important;
+}
+
+.validate {
+    margin: 10px auto;
+    width: 750px;
+    height: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid #eaeaea;
+}
+
+.validate thead th {
+
+    background-color: #f8f8f8;
+    font-weight: bold;
+    text-align: center;
+    height: 50px;
+    color: #545454;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 5px;
+
+}
+
+.validate thead th i {
+    font-size: 28px;
+    color: #66a7ff;
+
+}
+
+.validate thead th h3 {
+    padding-left: 20px;
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    font-size: 18px;
+    color: #545454;
+}
+
+.validate tbody tr {
+    background-color: #f8f8f8;
+    height: 140px;
+    border: none;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.validate tbody tr .fhit {
+    font-size: 14px;
+    color: #5c5c5c;
+    text-align: right;
+    /*display: inline-block;*/
+}
+
+.validate tbody tr .fhis {
+    padding: 0 0 20px 50px;
+}
+
+.validate tbody .second {
+    height: 80px;
+}
+
+.validate tbody tr button {
+    border: none;
+    color: #fff;
+    margin-right: 18px;
+    font-size: 14px;
+    height: 35px;
+    width: 100px;
+    text-align: center;
+    background-color: rgba(102, 167, 255, 0.8);
+}
+
+.validate tbody tr button:hover {
+    border: 1px solid #03a996;
+    background-color: rgba(102, 167, 255, 1);
+
+}
+
+.txt {
+    margin: 50px auto;
+    width: 750px;
+    text-align: left;
+    font-size: 14px;
+    color: #5c5c5c;
+}
+
+.txt .number {
+    color: #006dff;
+}
+
+.paled {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background: red;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

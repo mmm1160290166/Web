@@ -1,0 +1,806 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Nifty - Admin Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/nifty.min.css" rel="stylesheet">
+    <link href="plugins/themify-icons/themify-icons.min.css" rel="stylesheet">
+    <link href="css/demo/nifty-demo-icons.min.css" rel="stylesheet">
+    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="plugins/pace/pace.min.css" rel="stylesheet">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/nifty.min.js" type="text/javascript"></script>
+    <script src="plugins/bootstrap-datepicker/bootstrap-datepicker.min.js" type="text/javascript"></script>
+    <script src="plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js" type="text/javascript"></script>
+    <script src="plugins/pace/pace.min.js" type="text/javascript"></script>
+    <style type="text/css">
+        select.form-control {
+            height: 28px;
+            line-height: 28px;
+            padding: 0 12px;
+        }
+
+        dl {
+            margin-bottom: 0;
+        }
+
+        .dl-horizontal dt {
+            width: 100px;
+            padding-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .dl-horizontal dd {
+            margin-left: 120px;
+            margin-bottom: 5px;
+        }
+
+        .panel .panel-bordered-primary {
+            border: 1px solid #e7ecf3;
+        }
+
+            .panel .panel-bordered-primary .panel-heading {
+                height: 30px;
+                background-color: #ffffff;
+                border-color: #ffffff;
+                color: #000000;
+            }
+
+                .panel .panel-bordered-primary .panel-heading H3 {
+                    font-size: 14px;
+                }
+
+            .panel .panel-bordered-primary .panel-title {
+                height: 30px;
+                line-height: 30px;
+            }
+
+                .panel .panel-bordered-primary .panel-title .fa-angle-double-down {
+                    display: none;
+                }
+
+                .panel .panel-bordered-primary .panel-title .fa-angle-double-up {
+                    display: inline-block;
+                }
+
+                .panel .panel-bordered-primary .panel-title .collapsed .fa-angle-double-down {
+                    display: inline-block;
+                }
+
+                .panel .panel-bordered-primary .panel-title .collapsed .fa-angle-double-up {
+                    display: none;
+                }
+
+            .panel .panel-bordered-primary .panel-control {
+                height: 26px;
+                line-height: 26px;
+                padding: 0 20px;
+            }
+
+        .table {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body style="overflow:hidden;">
+    <div id="container" class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-control" style="float:left;">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#demo-tabs-box-1" aria-expanded="true"><i class="fa fa-info-circle"></i> 基本信息</a></li>
+                    <li class=""><a data-toggle="tab" href="#demo-tabs-box-2" aria-expanded="false"><i class="fa fa-trophy"></i> 技能资历</a></li>
+                    <li class=""><a data-toggle="tab" href="#demo-tabs-box-3" aria-expanded="false"><i class="fa fa-home"></i> 家庭状况</a></li>
+                    <li class=""><a data-toggle="tab" href="#demo-tabs-box-4" aria-expanded="false"><i class="fa fa-github"></i> 在职情况</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel-body" style="position:absolute;left:0;right:0;top:50px;bottom:51px; overflow:auto;">
+            <div class="tab-content">
+                <div id="demo-tabs-box-1" class="tab-pane fade active in">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <dl class="dl-horizontal">
+                                        <dt>工　　号：</dt>
+                                        <dd>
+                                            <label id="TEXT_HRID" name="TEXT_HRID" class="control-label">-</label>
+                                            <input id="VALUE_HRID" name="VALUE_HRID" type="text" class="form-control input-sm" />
+                                        </dd>
+                                        <dt>身份证号：</dt>
+                                        <dd>
+                                            <label id="TEXT_ZJHM" name="TEXT_ZJHM" class="control-label">-</label>
+                                            <input id="VALUE_ZJHM" name="VALUE_ZJHM" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>出生地点：</dt>
+                                        <dd>
+                                            <label id="" name="" class="control-label">-</label>
+                                            <input id="" name="" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>国　　籍：</dt>
+                                        <dd>
+                                            <label id="" name="" class="control-label">-</label>
+                                            <input id="" name="" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>政治面貌：</dt>
+                                        <dd>
+                                            <label id="TEXT_US003" name="TEXT_US003" class="control-label">-</label>
+                                            <select id="VALUE_US003" name="VALUE_US003" class="form-control">
+                                                <option value="" selected="selected">无</option>
+                                                <option value="中共党员(含预备党员)">中共党员(含预备党员)</option>
+                                                <option value="团员">团员</option>
+                                                <option value="群众">群众</option>
+                                                <option value="民主党派">民主党派</option>
+                                                <option value="无党派人士">无党派人士</option>
+                                            </select>
+                                        </dd>
+                                        <dt>电子邮箱：</dt>
+                                        <dd>
+                                            <label id="TEXT_EMAIL" name="TEXT_EMAIL" class="control-label">-</label>
+                                            <input id="VALUE_EMAIL" name="VALUE_EMAIL" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>手机号码：</dt>
+                                        <dd>
+                                            <label id="TEXT_MB" name="TEXT_MB" class="control-label">-</label>
+                                            <input id="VALUE_MB" name="VALUE_MB" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>办公电话：</dt>
+                                        <dd>
+                                            <label id="TEXT_TEL" name="TEXT_TEL" class="control-label">-</label>
+                                            <input id="VALUE_TEL" name="VALUE_TEL" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>毕业院校：</dt>
+                                        <dd>
+                                            <label id="TEXT_US011" name="TEXT_US011" class="control-label">-</label>
+                                            <input id="VALUE_US011" name="VALUE_US011" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>职　　称：</dt>
+                                        <dd>
+                                            <label id="" name="" class="control-label">-</label>
+                                            <input id="" name="" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>入职日期：</dt>
+                                        <dd>
+                                            <label id="TEXT_JOINDATE" name="TEXT_JOINDATE" class="control-label">-</label>
+                                            <input id="VALUE_JOINDATE" name="VALUE_JOINDATE" type="text" class="form-control input-sm form_datetime" readonly="readonly">
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="col-sm-4">
+                                    <dl class="dl-horizontal">
+                                        <dt>姓　　名：</dt>
+                                        <dd>
+                                            <label id="TEXT_DISPLAYNAME" name="TEXT_DISPLAYNAME" class="control-label">-</label>
+                                            <input id="VALUE_DISPLAYNAME" name="VALUE_DISPLAYNAME" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>性　　别：</dt>
+                                        <dd>
+                                            <label id="TEXT_SEX" name="TEXT_SEX" class="control-label">-</label>
+                                            <select id="VALUE_SEX" name="VALUE_SEX" class="form-control">
+                                                <option value="0" selected="selected">男</option>
+                                                <option value="1">女</option>
+                                            </select>
+                                        </dd>
+                                        <dt>出生日期：</dt>
+                                        <dd>
+                                            <label id="TEXT_BIRTHDAY" name="TEXT_BIRTHDAY" class="control-label">-</label>
+                                            <input id="VALUE_BIRTHDAY" name="VALUE_BIRTHDAY" type="text" class="form-control input-sm form_datetime" readonly="readonly" />
+                                        </dd>
+                                        <dt>民　　族：</dt>
+                                        <dd>
+                                            <label id="TEXT_MZ" name="TEXT_MZ" class="control-label">-</label>
+                                            <select id="VALUE_MZ" name="VALUE_MZ" class="form-control">
+                                                <option value="汉族" selected="selected">汉族</option>
+                                                <option value="鄂伦春族">鄂伦春族</option>
+                                                <option value="鄂温克族">鄂温克族</option>
+                                                <option value="达斡尔族">达斡尔族</option>
+                                                <option value="蒙古族">蒙古族</option>
+                                                <option value="赫哲族">赫哲族</option>
+                                                <option value="朝鲜族">朝鲜族</option>
+                                                <option value="满族">满族</option>
+                                                <option value="土家族">土家族</option>
+                                                <option value="毛南族">毛南族</option>
+                                                <option value="仫佬族">仫佬族</option>
+                                                <option value="京族">京族</option>
+                                                <option value="瑶族">瑶族</option>
+                                                <option value="壮族">壮族</option>
+                                                <option value="黎族">黎族</option>
+                                                <option value="畲族">畲族</option>
+                                                <option value="高山族">高山族</option>
+                                                <option value="乌孜别克族">乌孜别克族</option>
+                                                <option value="塔吉克族">塔吉克族</option>
+                                                <option value="柯尔克孜族">柯尔克孜族</option>
+                                                <option value="哈萨克族">哈萨克族</option>
+                                                <option value="塔塔尔族">塔塔尔族</option>
+                                                <option value="俄罗斯族">俄罗斯族</option>
+                                                <option value="锡伯族">锡伯族</option>
+                                                <option value="裕固族">裕固族</option>
+                                                <option value="土族">土族</option>
+                                                <option value="维吾尔族">维吾尔族</option>
+                                                <option value="保安族">保安族</option>
+                                                <option value="撒拉族">撒拉族</option>
+                                                <option value="东乡族">东乡族</option>
+                                                <option value="回族">回族</option>
+                                                <option value="仡佬族">仡佬族</option>
+                                                <option value="珞巴族">珞巴族</option>
+                                                <option value="布依族">布依族</option>
+                                                <option value="普米族">普米族</option>
+                                                <option value="阿昌族">阿昌族</option>
+                                                <option value="德昂族">德昂族</option>
+                                                <option value="门巴族">门巴族</option>
+                                                <option value="羌 族">羌 族</option>
+                                                <option value="基诺族">基诺族</option>
+                                                <option value="布朗族">布朗族</option>
+                                                <option value="独龙族">独龙族</option>
+                                                <option value="傈僳族">傈僳族</option>
+                                                <option value="怒族">怒族</option>
+                                                <option value="水族">水族</option>
+                                                <option value="景颇族">景颇族</option>
+                                                <option value="纳西族">纳西族</option>
+                                                <option value="拉祜族">拉祜族</option>
+                                                <option value="苗族">苗族</option>
+                                                <option value="哈尼族">哈尼族</option>
+                                                <option value="侗族">侗族</option>
+                                                <option value="佤族">佤族</option>
+                                                <option value="傣族">傣族</option>
+                                                <option value="藏族">藏族</option>
+                                                <option value="白族">白族</option>
+                                                <option value="彝族">彝族</option>
+                                            </select>
+                                        </dd>
+                                        <dt>婚姻状况：</dt>
+                                        <dd>
+                                            <label id="TEXT_US002" name="TEXT_US002" class="control-label">-</label>
+                                            <select id="VALUE_US002" name="VALUE_US002" class="form-control">
+                                                <option value="未婚" selected="selected">未婚</option>
+                                                <option value="已婚">已婚</option>
+                                                <option value="离异">离异</option>
+                                                <option value="丧偶">丧偶</option>
+                                            </select>
+                                        </dd>
+                                        <dt>微信账号：</dt>
+                                        <dd>
+                                            <label id="" name="" class="control-label">-</label>
+                                            <input id="" name="" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>手机短码：</dt>
+                                        <dd>
+                                            <label id="TEXT_MBCODE" name="TEXT_MBCODE" class="control-label">-</label>
+                                            <input id="VALUE_MBCODE" name="VALUE_MBCODE" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>电话内线：</dt>
+                                        <dd>
+                                            <label id="TEXT_TELCODE" name="TEXT_TELCODE" class="control-label">-</label>
+                                            <input id="VALUE_TELCODE" name="VALUE_TELCODE" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>专　　业：</dt>
+                                        <dd>
+                                            <label id="TEXT_US012" name="TEXT_US012" class="control-label">-</label>
+                                            <input id="VALUE_US012" name="VALUE_US012" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>掌握外语：</dt>
+                                        <dd>
+                                            <label id="VALUE_US013" name="VALUE_US013" class="control-label">-</label>
+                                            <select id="VALUE_US013" name="VALUE_US013" class="form-control">
+                                                <option value="" selected="selected">请选择</option>
+                                                <option value="英语">英语</option>
+                                                <option value="俄语">俄语</option>
+                                                <option value="日语">日语</option>
+                                                <option value="德语">德语</option>
+                                                <option value="法语">法语</option>
+                                            </select>
+                                        </dd>
+                                        <dt>转正日期：</dt>
+                                        <dd>
+                                            <label id="TEXT_US009" name="TEXT_US009" class="control-label">-</label>
+                                            <input id="VALUE_US009" name="VALUE_US009" type="text" class="form-control input-sm form_datetime" readonly="readonly">
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="col-sm-4">
+                                    <dl class="dl-horizontal">
+                                        <dt>身　　高：</dt>
+                                        <dd>
+                                            <label id="" name="" class="control-label">-</label>
+                                            <div class="input-group">
+                                                <input id="" name="" type="number" class="form-control input-sm">
+                                                <div class="input-group-addon" style="padding:0 0;">
+                                                    <label style="margin-top:5px;">CM</label>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                        <dt>体　　重：</dt>
+                                        <dd>
+                                            <label id="" name="" class="control-label">-</label>
+                                            <div class="input-group">
+                                                <input id="" name="" type="number" class="form-control input-sm">
+                                                <div class="input-group-addon" style="padding:0 0;">
+                                                    <label style="margin-top:5px;">KG</label>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                        <dt>血　　型：</dt>
+                                        <dd>
+                                            <label id="TEXT_US001" name="TEXT_US001" class="control-label">-</label>
+                                            <div class="input-group">
+                                                <select id="VALUE_US001" name="VALUE_US001" class="form-control">
+                                                    <option value="A" selected="selected">A</option>
+                                                    <option value="B">B</option>
+                                                    <option value="AB">AB</option>
+                                                    <option value="O">O</option>
+                                                </select>
+                                                <div class="input-group-addon" style="padding:0 0;">
+                                                    <label style="margin-top:5px;">型</label>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                        <dt>左/右视力：</dt>
+                                        <dd>
+                                            <label id="" name="" class="control-label">-</label>
+                                            <input id="" name="" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>宗教信仰：</dt>
+                                        <dd>
+                                            <label id="" name="" class="control-label">-</label>
+                                            <input id="" name="" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>紧急联系人：</dt>
+                                        <dd>
+                                            <label id="TEXT_US005" name="TEXT_US005" class="control-label">-</label>
+                                            <input id="VALUE_US005" name="VALUE_US005" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>紧急联系电话：</dt>
+                                        <dd>
+                                            <label id="TEXT_US006" name="TEXT_US006" class="control-label">-</label>
+                                            <input id="VALUE_US006" name="VALUE_US006" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>部　　门：</dt>
+                                        <dd>
+                                            <label id="" name="" class="control-label">-</label>
+                                            <div class="input-group">
+                                                <input id="DeptName" name="DeptName" type="text" placeholder="选择" class="form-control input-sm" readonly="readonly">
+                                                <input id="DeptGuid" name="DeptGuid" type="hidden">
+                                                <div class="input-group-addon" style="padding:0 0;background-color:#86c042;border:1px solid #79af3a;color:#ffffff; cursor:pointer;" onclick="javascript: alert('222');">
+                                                    <i class="demo-pli-add"></i>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                        <dt>文化程度：</dt>
+                                        <dd>
+                                            <label id="TEXT_US010" name="TEXT_US010" class="control-label">-</label>
+                                            <select id="VALUE_US010" name="VALUE_US010" class="form-control">
+                                                <option value="小学">小学</option>
+                                                <option value="中专">中专</option>
+                                                <option value="初中">初中</option>
+                                                <option value="高中">高中</option>
+                                                <option value="大专">大专</option>
+                                                <option value="本科" selected="selected">本科</option>
+                                                <option value="硕士">硕士</option>
+                                                <option value="博士">博士</option>
+                                            </select>
+                                        </dd>
+                                        <dt>外语水平：</dt>
+                                        <dd>
+                                            <label id="TEXT_US014" name="TEXT_US014" class="control-label">-</label>
+                                            <select id="VALUE_US014" name="VALUE_US014" class="form-control">
+                                                <option value="" selected="selected">请选择</option>
+                                                <option value="一级">一级</option>
+                                                <option value="二级">二级</option>
+                                                <option value="三级">三级</option>
+                                                <option value="四级">四级</option>
+                                                <option value="五级">五级</option>
+                                                <option value="其他">其他</option>
+                                            </select>
+                                        </dd>
+                                        <dt>离职日期：</dt>
+                                        <dd>
+                                            <label id="" name="" class="control-label">-</label>
+                                            <input id="" name="" type="text" class="form-control input-sm form_datetime" readonly="readonly">
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <dl class="dl-horizontal">
+                                        <dt>家庭住址：</dt>
+                                        <dd>
+                                            <label id="TEXT_US007" name="TEXT_US007" class="control-label">-</label>
+                                            <input id="VALUE_US007" name="VALUE_US007" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>户籍所在地：</dt>
+                                        <dd>
+                                            <label id="TEXT_US004" name="TEXT_US004" class="control-label">-</label>
+                                            <input id="VALUE_US004" name="VALUE_US004" type="text" class="form-control input-sm">
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="col-sm-6">
+                                    <dl class="dl-horizontal">
+                                        <dt>现居地址：</dt>
+                                        <dd>
+                                            <label id="TEXT_US008" name="TEXT_US008" class="control-label">-</label>
+                                            <input id="VALUE_US008" name="VALUE_US008" type="text" class="form-control input-sm">
+                                        </dd>
+                                        <dt>户籍所在地：</dt>
+                                        <dd>
+                                            <label id="" name="" class="control-label">-</label>
+                                            <input id="" name="" type="text" class="form-control input-sm">
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <dl class="dl-horizontal">
+                                        <dt>爱好或特长：</dt>
+                                        <dd>
+                                            <label id="" name="" class="control-label">-</label>
+                                            <textarea id="" name=""  placeholder="请输入您的爱好或特长" rows="2" class="form-control"></textarea>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2" style="text-align:center;">
+                            <div class="col-sm-12"><img style="width:140px;height:200px;" /></div>
+                            <div class="col-sm-12 mar-top">
+                                <button type="button" class="btn btn-sm btn-primary">上传照片</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="demo-tabs-box-2" class="tab-pane fade">
+                    <div class="panel panel-bordered-primary">
+                        <div class="panel-heading">
+                            <div class="panel-control">
+                                <button class="btn btn-xs btn-warning"><i class="ti-plus"></i> 添加</button>
+                            </div>
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" href="#demo-panel-collapse-1"><i class="fa fa-angle-double-down"></i><i class="fa fa-angle-double-up"></i> 教育经历</a>
+                            </h3>
+                        </div>
+                        <div id="demo-panel-collapse-1" class="collapse in" aria-expanded="true">
+                            <div class="panel-body">
+                                <table id="demo-foo-addrow" class="table table-bordered table-hover toggle-circle default footable-loaded footable no-paging">
+                                    <thead>
+                                        <tr>
+                                            <th class="footable-visible footable-first-column" style="width:120px;">起时</th>
+                                            <th class="footable-visible" style="width:120px;">止时</th>
+                                            <th class="footable-visible" style="width:150px;">学历</th>
+                                            <th class="footable-visible" style="width:250px;">毕业院校</th>
+                                            <th class="footable-visible">专业</th>
+                                            <th class="min-width footable-visible footable-last-column"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="footable-even" style="display: table-row;">
+                                            <td class="footable-visible footable-first-column"></td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">Business</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="min-width footable-visible footable-last-column">
+                                                <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="footable-odd" style="display: table-row;">
+                                            <td class="footable-visible footable-first-column"></td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">Business</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="min-width footable-visible footable-last-column">
+                                                <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-bordered-primary">
+                        <div class="panel-heading">
+                            <div class="panel-control">
+                                <button class="btn btn-xs btn-warning"><i class="ti-plus"></i> 添加</button>
+                            </div>
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" href="#demo-panel-collapse-2"><i class="fa fa-angle-double-down"></i><i class="fa fa-angle-double-up"></i> 工作经历</a>
+                            </h3>
+                        </div>
+                        <div id="demo-panel-collapse-2" class="collapse in" aria-expanded="true">
+                            <div class="panel-body">
+                                <table id="demo-foo-addrow" class="table table-bordered table-hover toggle-circle default footable-loaded footable no-paging">
+                                    <thead>
+                                        <tr>
+                                            <th class="footable-visible footable-first-column" style="width:120px;">起时</th>
+                                            <th class="footable-visible" style="width:120px;">止时</th>
+                                            <th class="footable-visible" style="width:250px;">单位</th>
+                                            <th class="footable-visible" style="width:150px;">职务</th>
+                                            <th class="footable-visible">工作内容</th>
+                                            <th class="min-width footable-visible footable-last-column"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="footable-even" style="display: table-row;">
+                                            <td class="footable-visible footable-first-column"></td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">Business</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="min-width footable-visible footable-last-column">
+                                                <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="footable-odd" style="display: table-row;">
+                                            <td class="footable-visible footable-first-column"></td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">Business</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="min-width footable-visible footable-last-column">
+                                                <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-bordered-primary">
+                        <div class="panel-heading">
+                            <div class="panel-control">
+                                <button class="btn btn-xs btn-warning"><i class="ti-plus"></i> 添加</button>
+                            </div>
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" href="#demo-panel-collapse-3"><i class="fa fa-angle-double-down"></i><i class="fa fa-angle-double-up"></i> 技能职称</a>
+                            </h3>
+                        </div>
+                        <div id="demo-panel-collapse-3" class="collapse in" aria-expanded="true">
+                            <div class="panel-body">
+                                <table id="demo-foo-addrow" class="table table-bordered table-hover toggle-circle default footable-loaded footable no-paging">
+                                    <thead>
+                                        <tr>
+                                            <th class="footable-visible footable-first-column" style="width:150px;">技能/职称名称</th>
+                                            <th class="footable-visible" style="width:150px;">技能/职称等级</th>
+                                            <th class="footable-visible" style="width:120px;">获得时间</th>
+                                            <th class="footable-visible" style="width:200px;">证件号</th>
+                                            <th class="footable-visible" style="width:100px;">有效期限</th>
+                                            <th class="footable-visible">备注说明</th>
+                                            <th class="min-width footable-visible footable-last-column"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="footable-even" style="display: table-row;">
+                                            <td class="footable-visible footable-first-column"></td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">Business</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="footable-visible">Business</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="min-width footable-visible footable-last-column">
+                                                <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="footable-odd" style="display: table-row;">
+                                            <td class="footable-visible footable-first-column"></td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">Business</td>
+                                            <td class="footable-visible">430221198712297818</td>
+                                            <td class="footable-visible">Business</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="min-width footable-visible footable-last-column">
+                                                <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-bordered-primary">
+                        <div class="panel-heading">
+                            <div class="panel-control">
+                                <button class="btn btn-xs btn-warning"><i class="ti-plus"></i> 添加</button>
+                            </div>
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" href="#demo-panel-collapse-4"><i class="fa fa-angle-double-down"></i><i class="fa fa-angle-double-up"></i> 奖惩记录</a>
+                            </h3>
+                        </div>
+                        <div id="demo-panel-collapse-4" class="collapse in" aria-expanded="true">
+                            <div class="panel-body">
+                                <table id="demo-foo-addrow" class="table table-bordered table-hover toggle-circle default footable-loaded footable no-paging">
+                                    <thead>
+                                        <tr>
+                                            <th class="footable-visible footable-first-column" style="width:100px;">奖惩</th>
+                                            <th class="footable-visible" style="width:120px;">时间</th>
+                                            <th class="footable-visible" style="width:200px;">原因</th>
+                                            <th class="footable-visible">内容</th>
+                                            <th class="min-width footable-visible footable-last-column"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="footable-even" style="display: table-row;">
+                                            <td class="footable-visible footable-first-column"></td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">Business</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="min-width footable-visible footable-last-column">
+                                                <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="footable-odd" style="display: table-row;">
+                                            <td class="footable-visible footable-first-column"></td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">Business</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="min-width footable-visible footable-last-column">
+                                                <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-bordered-primary">
+                        <div class="panel-heading">
+                            <div class="panel-control">
+                                <button class="btn btn-xs btn-warning"><i class="ti-plus"></i> 添加</button>
+                            </div>
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" href="#demo-panel-collapse-5"><i class="fa fa-angle-double-down"></i><i class="fa fa-angle-double-up"></i> 个人荣耀</a>
+                            </h3>
+                        </div>
+                        <div id="demo-panel-collapse-5" class="collapse in" aria-expanded="true">
+                            <div class="panel-body">
+                                <table id="demo-foo-addrow" class="table table-bordered table-hover toggle-circle default footable-loaded footable no-paging">
+                                    <thead>
+                                        <tr>
+                                            <th class="footable-visible footable-first-column" style="width:250px;">获得荣誉</th>
+                                            <th class="footable-visible" style="width:120px;">获得时间</th>
+                                            <th class="footable-visible">备注</th>
+                                            <th class="min-width footable-visible footable-last-column"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="footable-even" style="display: table-row;">
+                                            <td class="footable-visible footable-first-column"></td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="min-width footable-visible footable-last-column">
+                                                <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="footable-odd" style="display: table-row;">
+                                            <td class="footable-visible footable-first-column"></td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="min-width footable-visible footable-last-column">
+                                                <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="demo-tabs-box-3" class="tab-pane fade">
+                    <div class="panel panel-bordered-primary">
+                        <div class="panel-heading">
+                            <div class="panel-control">
+                                <button class="btn btn-xs btn-warning"><i class="ti-plus"></i> 添加</button>
+                            </div>
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" href="#demo-panel-collapse-6"><i class="fa fa-angle-double-down"></i><i class="fa fa-angle-double-up"></i> 家庭状况</a>
+                            </h3>
+                        </div>
+                        <div id="demo-panel-collapse-6" class="collapse in" aria-expanded="true">
+                            <div class="panel-body">
+                                <table id="demo-foo-addrow" class="table table-bordered table-hover toggle-circle default footable-loaded footable no-paging">
+                                    <thead>
+                                        <tr>
+                                            <th class="footable-visible footable-first-column" style="width:120px;">姓名</th>
+                                            <th class="footable-visible" style="width:120px;">关系</th>
+                                            <th class="footable-visible" style="width:120px;">电话</th>
+                                            <th class="footable-visible" style="width:200px;">联系地址</th>
+                                            <th class="footable-visible" style="width:200px;">所在单位</th>
+                                            <th class="footable-visible">职务</th>
+                                            <th class="min-width footable-visible footable-last-column"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="footable-even" style="display: table-row;">
+                                            <td class="footable-visible footable-first-column">唐璐</td>
+                                            <td class="footable-visible">姐姐</td>
+                                            <td class="footable-visible">18075119044</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="footable-visible">18075119044</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="min-width footable-visible footable-last-column">
+                                                <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="footable-odd" style="display: table-row;">
+                                            <td class="footable-visible footable-first-column"></td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">Business</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="footable-visible">18075119044</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="min-width footable-visible footable-last-column">
+                                                <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="demo-tabs-box-4" class="tab-pane fade">
+                    <div class="panel panel-bordered-primary">
+                        <div class="panel-heading">
+                            <div class="panel-control">
+                                <button class="btn btn-xs btn-warning"><i class="ti-plus"></i> 添加</button>
+                            </div>
+                            <h3 class="panel-title">
+                                <a data-toggle="collapse" href="#demo-panel-collapse-0"><i class="fa fa-angle-double-down"></i><i class="fa fa-angle-double-up"></i> 体检记录</a>
+                            </h3>
+                        </div>
+                        <div id="demo-panel-collapse-0" class="collapse in" aria-expanded="true">
+                            <div class="panel-body">
+                                <table id="demo-foo-addrow" class="table table-bordered table-hover toggle-circle default footable-loaded footable no-paging">
+                                    <thead>
+                                        <tr>
+                                            <th class="footable-visible footable-first-column" style="width:120px;">体检时间</th>
+                                            <th class="footable-visible" style="width:200px;">体检项目</th>
+                                            <th class="footable-visible" style="width:200px;">体检结果</th>
+                                            <th class="footable-visible">异常情况</th>
+                                            <th class="min-width footable-visible footable-last-column"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="footable-even" style="display: table-row;">
+                                            <td class="footable-visible footable-first-column"></td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">Business</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="min-width footable-visible footable-last-column">
+                                                <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                            </td>
+                                        </tr>
+                                        <tr class="footable-odd" style="display: table-row;">
+                                            <td class="footable-visible footable-first-column"></td>
+                                            <td class="footable-visible">Wold</td>
+                                            <td class="footable-visible">Business</td>
+                                            <td class="footable-visible">17 Oct 1987</td>
+                                            <td class="min-width footable-visible footable-last-column">
+                                                <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="position:absolute;left:0;right:0;bottom:0;height:50px;text-align:center;border-top:1px solid #cccccc;padding-top:10px;">
+            <button class="btn btn-sm btn-primary" type="button" onclick="javascript:ajaxSubmit();">保存</button>
+            <button class="btn btn-sm btn-warning" type="button" onclick="javascript:$.P8.common().pop_close();">关闭</button>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    $(function () {
+        $(".form_datetime").datepicker({ language: 'zh-CN', autoclose: true, todayHighlight: true, clearBtn: true, format: "yyyy-mm-dd" }).on("changeDate", function () { $(".form_datetime").change(); });
+    });
+</script>

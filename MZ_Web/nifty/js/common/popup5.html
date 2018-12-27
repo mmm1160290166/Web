@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup5-上传页面</title>
+
+    <!--css-->
+
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../plugins/bootstrap-fileinput/css/fileinput.min.css">
+    <link rel="stylesheet" href="../../css/nifty.p8.css">
+
+    <!--js-->
+
+    <script src="../../js/jquery-2.2.4.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../plugins/bootstrap-fileinput/js/fileinput.min.js"></script>
+    <script src="../../plugins/bootstrap-fileinput/themes/gly/theme.js"></script>
+    <script src="../../plugins/bootstrap-fileinput/js/locales/zh.js"></script>
+    <script src="p8.common.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="posi_xml">
+    <!--<label class="control-label">文件上传</label>-->
+    <input id="input-gly" name="inputgly[]" type="file" multiple class="file-loading">
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary btnPop" type="button">保存</button>
+    <button class="btn btn-default btnPop" type="button" onclick="javascript:$.P8.common().pop_close();">关闭
+    </button>
+</div>
+<script>
+$("#input-gly").fileinput({
+    language: "zh",//设置语言
+    theme: "gly",
+    uploadUrl: "/file-upload-batch/2",//上传的地址
+    allowedFileExtensions: ["jpg", "png", "gif"],//接收的文件后缀
+    showUpload : true,//是否显示上传按钮
+    showRemove : true, //显示移除按钮
+    showPreview : true, //是否显示预览
+    layoutTemplates: { actionUpload: '' }, //图片的删除,上传按钮显示actionDelete: '',
+    enctype: 'multipart/form-data',
+});
+</script>
+</body>
+</html>

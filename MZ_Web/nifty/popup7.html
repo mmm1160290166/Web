@@ -1,0 +1,750 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!--css-->
+    <!--<link rel="icon" href="img/nav-profile.png"/>-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/nifty.min.css" rel="stylesheet">
+    <link href="css/demo/nifty-demo-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="plugins/magic-check/css/magic-check.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap-validator/bootstrapValidator.min.css">
+    <link rel="stylesheet" href="css/nifty.p8.css">
+
+    <!--js-->
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nifty.min.js"></script>
+    <script src="js/demo/nifty-demo.min.js"></script>
+    <script src="plugins/bootstrap-validator/bootstrapValidator.min.js"></script>
+    <script src="plugins/masked-input/jquery.maskedinput.min.js"></script>
+    <script src="js/demo/form-validation.js"></script>
+</head>
+<body>
+<div class="width">
+    <div class="modal-content" style="border: none">
+
+        <!--Modal header-->
+        <div class="modal-header bg-warning height">
+        </div>
+
+        <!--Modal body-->
+        <div class="modal-body widget-body">
+            <img alt="Profile Picture" class="widget-img img-circle" src="img/mine/header.png">
+            <div class="xin_content">
+                <h3>麦当娜.里约热内卢斯基</h3>
+                <h4>研发部</h4>
+            </div>
+            <div class="tabbable tab-body" id="myTabs">
+                <ul class="nav nav-tabs nav_tabxml">
+                    <li class="active"><a href="#ta1" data-toggle="tab">个人资料</a></li>
+                    <li><a href="#ta2" data-toggle="tab">个人设置</a></li>
+                    <li><a href="#ta3" data-toggle="tab">修改密码</a></li>
+                </ul>
+                <div class="tab-content padd" style="border-bottom:0">
+                    <div class="tab-pane active" id="ta1">
+                        <div class="panel-group bom0 accordion" id="accordion">
+                            <div class="panel panel-purple">
+                                <!-- Accordion title -->
+                                <div class="panel-heading accordion_xml">
+                                    <h4 class="panel-title">
+                                        <a data-parent="#demo-acc-purple" data-toggle="collapse"
+                                           href="#demo-acd-purple-1">
+                                            <div style="width: 100%">
+                                                <div class="left">基本信息</div>
+                                            </div>
+                                        </a>
+                                        <div class="right">
+                                            <button type="button" class="edits">修改</button>
+                                        </div>
+                                    </h4>
+                                </div>
+                                <!-- Accordion content -->
+                                <div class="panel-collapse collapse in" id="demo-acd-purple-1">
+                                    <div class="panel-body pad_body">
+                                        <table class="table table-bordered marBotm edits1">
+                                            <tbody>
+                                            <tr>
+                                                <td class="right0 wid12">
+                                                    <label class="control-label bom0">姓名</label>
+                                                </td>
+                                                <td class="wid27 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <input type="text" placeholder="text" class="form-control shade_show inputP">
+                                                </td>
+                                                <td  class="wid25 right0">
+                                                    <label class="control-label bom0">政治面貌</label>
+                                                </td>
+                                                <td  class="wid36 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <input type="text" placeholder="text" class="form-control shade_show inputP">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="right0 wid12">
+                                                    <label class="control-label bom0">性别</label>
+                                                </td>
+                                                <td class="wid27 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <select name="sex" id="sex" class="form-control shade_show inputP">
+                                                        <option value="male">男</option>
+                                                        <option value="female">女</option>
+                                                    </select>
+                                                </td>
+                                                <td  class="wid25 right0">
+                                                    <label class="control-label bom0">电子邮箱</label>
+                                                </td>
+                                                <td  class="wid36 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <input type="email" placeholder="text" class="form-control shade_show inputP">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="right0 wid12">
+                                                    <label class="control-label bom0" >工号</label>
+                                                </td>
+                                                <td class="wid27 verMid">
+                                                    <label class="control-label bom0 disable">2017082500</label>
+                                                </td>
+                                                <td  class="wid25 right0">
+                                                    <label class="control-label bom0">家庭住址</label>
+                                                </td>
+                                                <td  class="wid36 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <input type="text" placeholder="text" class="form-control shade_show inputP">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="right0 wid12">
+                                                    <label class="control-label bom0" >现居</label>
+                                                </td>
+                                                <td class="wid27 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <input type="text" placeholder="text" class="form-control shade_show inputP">
+                                                </td>
+                                                <td  class="wid25 right0">
+                                                    <label class="control-label bom0">户籍所在</label>
+                                                </td>
+                                                <td  class="wid36 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <input type="text" placeholder="text" class="form-control shade_show inputP">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="right0 wid12">
+                                                    <label class="control-label bom0" >血型</label>
+                                                </td>
+                                                <td class="wid27 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <select name="blood" id="blood" class="form-control shade_show inputP">
+                                                        <option value="A">A型</option>
+                                                        <option value="B">B型</option>
+                                                        <option value="AB">AB型</option>
+                                                        <option value="O">O型</option>
+                                                    </select>
+                                                </td>
+                                                <td  class="wid25 right0">
+                                                    <label class="control-label bom0">文化程度</label>
+                                                </td>
+                                                <td  class="wid36 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <select name="education" id="education" class="form-control shade_show inputP">
+                                                        <option value="primarySchool">小学</option>
+                                                        <option value="middleSchool">初中</option>
+                                                        <option value="highSchool">高中</option>
+                                                        <option value="universiatySchool">大专</option>
+                                                        <option value="collegeSchool">本科</option>
+                                                        <option value="collegeUpSchool">本科以上</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="right0 wid12">
+                                                    <label class="control-label bom0" >出生日期</label>
+                                                </td>
+                                                <td class="wid27 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <input type="text" placeholder="text" class="form-control shade_show inputP">
+                                                </td>
+                                                <td  class="wid25 right0">
+
+                                                    <label class="control-label bom0">紧急联系人</label>
+                                                </td>
+                                                <td  class="wid36 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <input type="text" placeholder="text" class="form-control shade_show inputP">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="right0 wid12">
+                                                    <label class="control-label bom0" >婚姻状况</label>
+                                                </td>
+                                                <td class="wid27 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <select name="marriage" id="marriage" class="form-control shade_show inputP">
+                                                        <option value="unmarried">未婚</option>
+                                                        <option value="married">已婚</option>
+                                                        <option value="dissociaton">离异</option>
+                                                        <option value="widowed">丧偶</option>
+                                                    </select>
+                                                </td>
+                                                <td  class="wid25 right0">
+                                                    <label class="control-label bom0">紧急联系人电话</label>
+                                                </td>
+                                                <td  class="wid36 verMid">
+                                                    <label class="control-label bom0 placehold">-</label>
+                                                    <input type="text" placeholder="text" class="form-control shade_show inputP">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="right0 wid12">
+                                                    <label class="control-label bom0" >移动电话</label>
+                                                </td>
+                                                <td class="wid27 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <input type="text" placeholder="text" class="form-control shade_show inputP">
+                                                </td>
+                                                <td  class="wid25 right0">
+                                                    <label class="control-label bom0">转正日期</label>
+                                                </td>
+                                                <td  class="wid36 verMid">
+                                                    <label class="control-label bom0 disable">2017-10-25</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="right0 wid12">
+                                                    <label class="control-label bom0" >毕业院校</label>
+                                                </td>
+                                                <td class="wid27 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <input type="text" placeholder="请输入您的姓名..." class="form-control shade_show inputP">
+                                                </td>
+                                                <td  class="wid25 right0">
+                                                    <label class="control-label bom0">外语水平</label>
+                                                </td>
+                                                <td  class="wid36 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <input type="text" placeholder="text" class="form-control shade_show inputP">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="right0 wid12">
+                                                    <label class="control-label bom0" >专业</label>
+                                                </td>
+                                                <td class="wid27 verMid">
+                                                    <label class="control-label bom0 placehold hode1">-</label>
+                                                    <input type="text" placeholder="text" class="form-control shade_show inputP">
+                                                </td>
+                                                <td  class="wid25 right0">
+                                                    <label class="control-label bom0">入司时间</label>
+                                                </td>
+                                                <td  class="wid36 verMid">
+                                                    <label class="control-label bom0 disable">2017-07-25</label>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-purple">
+
+                                <!-- Accordion title -->
+                                <div class="panel-heading accordion_xml">
+                                    <h4 class="panel-title">
+                                        <a data-parent="#demo-acc-purple" data-toggle="collapse"
+                                           href="#demo-acd-purple-2" class="educate">
+                                            <div style="width: 100%">
+                                                <div class="left">教育经历</div>
+                                            </div>
+                                        </a>
+                                        <div class="right educateDown">
+                                            <button type="button" class="tianjia">添加</button>
+                                        </div>
+                                    </h4>
+                                </div>
+                                <!-- Accordion content -->
+                                <div class="panel-collapse collapse" id="demo-acd-purple-2">
+                                    <div class="panel-body padd_body cateDown">
+                                        <table class="table table-bordered marBotm">
+                                            <thead>
+                                            <tr>
+                                                <th style="width: 16%">起时</th>
+                                                <th style="width: 16%">止时</th>
+                                                <th style="width: 8.5%">学历</th>
+                                                <th style="width: 25%">毕业院校</th>
+                                                <th style="width: 25%">专业</th>
+                                                <th style="width: 4.4%">操作</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class="fanben">
+                                                <td>
+                                                    <div>2012-09-01</div>
+                                                </td>
+                                                <td>
+                                                    <div>2016-09-01</div>
+                                                </td>
+                                                <td>
+                                                    <div>本科</div>
+                                                </td>
+                                                <td>
+                                                    <div>湖南农业科技大学</div>
+                                                </td>
+                                                <td>
+                                                    <div>经济管理专业</div>
+                                                </td>
+                                                <td>
+                                                    <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-purple">
+                                <!-- Accordion title -->
+                                <div class="panel-heading accordion_xml">
+                                    <h4 class="panel-title">
+                                        <a data-parent="#demo-acc-purple" data-toggle="collapse"
+                                           href="#demo-acd-purple-3">
+                                            <div style="width: 100%">
+                                                <div class="left">工作经历</div>
+                                            </div>
+                                        </a>
+                                        <div class="right worker">
+                                            <button type="button" class="work">添加</button>
+                                        </div>
+                                    </h4>
+                                </div>
+
+                                <!-- Accordion content -->
+                                <div class="panel-collapse collapse" id="demo-acd-purple-3">
+                                    <div class="panel-body padd_body workDown">
+                                        <table class="table table-bordered marBotm">
+                                            <thead>
+                                            <tr>
+                                                <th style="width: 16%">起时</th>
+                                                <th style="width: 16%">止时</th>
+                                                <th style="width: 18%">单位</th>
+                                                <th style="width: 18%">职务</th>
+                                                <th style="width: 26.9%">工作内容</th>
+                                                <th style="width: 5%">操作</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class="fanben">
+                                                <td>
+                                                    <div>2012-09-01</div>
+                                                </td>
+                                                <td>
+                                                    <div>2016-09-01</div>
+                                                </td>
+                                                <td>
+                                                    <div>本科</div>
+                                                </td>
+                                                <td>
+                                                    <div>湖南农业科技大学</div>
+                                                </td>
+                                                <td>
+                                                    <div>经济管理专业</div>
+                                                </td>
+                                                <td>
+                                                    <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-purple">
+
+                                <!-- Accordion title -->
+                                <div class="panel-heading accordion_xml">
+                                    <h4 class="panel-title">
+                                        <a data-parent="#demo-acc-purple" data-toggle="collapse"
+                                           href="#demo-acd-purple-4">
+                                            <div style="width: 100%">
+                                                <div class="left">家庭状况</div>
+                                            </div>
+                                        </a>
+                                        <div class="right familyer">
+                                            <button type="button" class="family">修改</button>
+                                        </div>
+                                    </h4>
+                                </div>
+
+                                <!-- Accordion content -->
+                                <div class="panel-collapse collapse" id="demo-acd-purple-4">
+                                    <div class="panel-body padd_body familyDown">
+                                        <table class="table table-bordered marBotm">
+                                            <thead>
+                                            <tr>
+                                                <th style="width: 10%">姓名</th>
+                                                <th style="width: 9.9%">关系</th>
+                                                <th style="width: 15%">电话</th>
+                                                <th style="width: 20%">联系地址</th>
+                                                <th style="width: 25%">所在单位</th>
+                                                <th style="width: 15%">职务</th>
+                                                <th style="width: 5%">操作</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class="fanben">
+                                                <td>
+                                                    <div>哈哈哈</div>
+                                                </td>
+                                                <td>
+                                                    <div>父女</div>
+                                                </td>
+                                                <td>
+                                                    <div>123456789</div>
+                                                </td>
+                                                <td>
+                                                    <div>湖南省长沙市开福区岳麓区</div>
+                                                </td>
+                                                <td>
+                                                    <div>湖南谱典信息技术有限公司</div>
+                                                </td>
+                                                <td>
+                                                    <div>哈哈哈哈</div>
+                                                </td>
+                                                <td>
+                                                    <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-purple">
+
+                                <!-- Accordion title -->
+                                <div class="panel-heading accordion_xml">
+                                    <h4 class="panel-title">
+                                        <a data-parent="#demo-acc-purple" data-toggle="collapse"
+                                           href="#demo-acd-purple-5">
+                                            <div style="width: 100%">
+                                                <div class="left">在职状况</div>
+                                            </div>
+                                        </a>
+                                        <!--<div class="right">-->
+                                        <!--<button type="button">修改</button>-->
+                                        <!--</div>-->
+                                    </h4>
+                                </div>
+
+                                <!-- Accordion content -->
+                                <div class="panel-collapse collapse" id="demo-acd-purple-5">
+                                    <div class="panel-body padd_body">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                            <tr>
+                                                <th colspan="4" style="text-align: left">公司奖惩记录</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td style="width: 25%">
+                                                    <div>奖惩</div>
+                                                </td>
+                                                <td style="width: 24.9%">
+                                                    <div>时间</div>
+                                                </td>
+                                                <td style="width: 25%">
+                                                    <div>原因</div>
+                                                </td>
+                                                <td style="width: 25%">
+                                                    <div>内容</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="fanben">
+                                                <td>
+                                                    <label class="control-label bom0 placehold">-</label>
+                                                </td>
+                                                <td>
+                                                    <label class="control-label bom0 placehold">-</label>
+                                                </td>
+                                                <td>
+                                                    <label class="control-label bom0 placehold">-</label>
+                                                </td>
+                                                <td>
+                                                    <label class="control-label bom0 placehold">-</label>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table table-bordered marBotm">
+                                            <thead>
+                                            <tr>
+                                                <th colspan="4" style="text-align: left">公司体检记录</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td style="width: 25%">
+                                                    <div>体检时间</div>
+                                                </td>
+                                                <td style="width: 24.9%">
+                                                    <div>体检项目</div>
+                                                </td>
+                                                <td style="width: 25%">
+                                                    <div>体检结果</div>
+                                                </td>
+                                                <td style="width: 25%">
+                                                    <div>异常情况</div>
+                                                </td>
+                                            </tr>
+                                            <tr class="fanben">
+                                                <td>
+                                                    <label class="control-label bom0 placehold">-</label>
+                                                </td>
+                                                <td>
+                                                    <label class="control-label bom0 placehold">-</label>
+                                                </td>
+                                                <td>
+                                                    <label class="control-label bom0 placehold">-</label>
+                                                </td>
+                                                <td>
+                                                    <label class="control-label bom0 placehold">-</label>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-purple">
+
+                                <!-- Accordion title -->
+                                <div class="panel-heading accordion_xml">
+                                    <h4 class="panel-title">
+                                        <a data-parent="#demo-acc-purple" data-toggle="collapse"
+                                           href="#demo-acd-purple-6">
+                                            <div style="width: 100%">
+                                                <div class="left">个人荣誉</div>
+                                            </div>
+                                        </a>
+                                        <div class="right rongyu">
+                                            <button type="button" class="rong">修改</button>
+                                        </div>
+                                    </h4>
+                                </div>
+
+                                <!-- Accordion content -->
+                                <div class="panel-collapse collapse" id="demo-acd-purple-6">
+                                    <div class="panel-body padd_body rongDown">
+                                        <table class="table table-bordered marBotm">
+                                            <thead>
+                                            <tr>
+                                                <th style="width: 32%">获得荣誉</th>
+                                                <th style="width: 32%">获得时间</th>
+                                                <th style="width: 32%">备注</th>
+                                                <th style="width: 4%">操作</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class="fanben">
+                                                <td>
+                                                    <div>湖南农业科技大学</div>
+                                                </td>
+                                                <td>
+                                                    <div>2湖南农业科技大学</div>
+                                                </td>
+                                                <td>
+                                                    <div>湖南农业科技大学</div>
+                                                </td>
+                                                <td>
+                                                    <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="ta2">
+                        <div class="panel-group bom0 accordion" id="accordion">
+                            <div class="panel panel-purple">
+                                <!-- Accordion title -->
+                                <div class="panel-heading accordion_xml">
+                                    <h4 class="panel-title">
+                                        <a data-parent="#demo-acc" data-toggle="collapse"
+                                           href="#demo-acd-1">
+                                            <div style="width: 100%">
+                                                <div class="left">头像</div>
+                                            </div>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <!-- Accordion content -->
+                                <div class="panel-collapse collapse in" id="demo-acd-1">
+                                    <div class="panel-body padd_body">
+                                        <div class="box">
+                                            <img src="img/mine/touxiang.png" alt="" id="pic">
+                                        </div>
+                                        <button type="button" class="boxBottom">上传头像</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-purple">
+
+                                <!-- Accordion title -->
+                                <div class="panel-heading accordion_xml">
+                                    <h4 class="panel-title">
+                                        <a data-parent="#demo-acc" data-toggle="collapse"
+                                           href="#demo-acd-2" class="educate">
+                                            <div style="width: 100%">
+                                                <div class="left">消息</div>
+                                            </div>
+                                        </a>
+                                    </h4>
+                                </div>
+                                <!-- Accordion content -->
+                                <div class="panel-collapse collapse" id="demo-acd-2">
+                                    <div class="panel-body padd_body">
+                                        <div class="pullLeft">
+                                            弹出消息通知
+                                        </div>
+                                        <div class="pull-right pullRight">
+                                            <input id="demo-online-status-checkbox" class="toggle-switch" type="checkbox" checked>
+                                            <label for="demo-online-status-checkbox"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="ta3">
+                        <div class="panel-group bom0 accordion">
+                            <div class="panel panel-purple">
+                                <!-- Accordion title -->
+                                <div class="panel-heading accordion_xml">
+                                    <h4 class="panel-title">
+                                        <div style="width: 100%">
+                                            <a data-parent="#demo-acc-purple" data-toggle="collapse"
+                                               href="#demo-acd-purple-1">
+                                                <div style="width: 100%">
+                                                    <div class="left">密码</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </h4>
+                                </div>
+                                <div class="panel-body"  id="demo-bvd-notempty">
+                                    <fieldset style="text-align: center">
+                                        <div class="form-group row" style="margin-bottom: 15px">
+                                            <label class="col-lg-3 control-label label_xml">旧密码:</label>
+                                            <div class="col-lg-7" style="display: inline-block">
+                                                <input type="password" class="form-control hang" placeholder="请输入旧密码...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row" style="margin-bottom: 15px">
+                                            <label class="col-lg-3 control-label label_xml">新密码:</label>
+                                            <div class="col-lg-7" style="display: inline-block">
+                                                <input type="password" class="form-control hang" name="password" placeholder="请输入新密码...">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-lg-3 control-label label_xml">确认密码:</label>
+                                            <div class="col-lg-7" style="display: inline-block;padding-left: 0px">
+                                                <input type="password" class="form-control hang" name="confirmPassword" placeholder="请确认新密码...">
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <div class="row">
+                                        <div class="col-lg-3"></div>
+                                        <div class="col-lg-7"><button type="button" class="btnYang">保存</button></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+
+        var a=$(window).height();
+        console.log(a);
+        $('.padd').height((a-280)+'px');
+
+        //        个人资料:
+        //      基本信息的点击修改事件
+        $('.edits').on('click',function () {
+            if($('.edits').html()=='修改') {
+            $(this).html('保存');
+            $('.edits1 .hode1').addClass('shade_show');
+            $('.edits1 .inputP').removeClass('shade_show');
+        }
+        })
+        //      教育经历的点击添加事件
+        $('.educateDown .tianjia').click(function () {
+        if($('.anniu').html()!=='保存'){
+        $('.educateDown .tianjia').before('<button type="button" class="anniu">保存</button>');
+        }
+        $('.cateDown .fanben').after('<tr>' +
+        '<td><input type="text" placeholder="text" class="form-control"></td>' +
+        '<td><input type="text" placeholder="text" class="form-control"></td> ' +
+        '<td><input type="text" placeholder="text" class="form-control"></td> ' +
+        '<td><input type="text" placeholder="text" class="form-control"></td> ' +
+        '<td><input type="text" placeholder="text" class="form-control"></td>' +
+        '<td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></td> </tr>');
+        })
+        //       工作经历的点击添加事件
+        $('.worker .work').on('click',function () {
+        if($('.anniu1').html()!=='保存'){
+        $('.worker .work').before('<button type="button" class="anniu1">保存</button>');
+        }
+        $('.workDown .fanben').after('<tr>' +
+        '<td><input type="text" placeholder="text" class="form-control"></td>' +
+        '<td><input type="text" placeholder="text" class="form-control"></td> ' +
+        '<td><input type="text" placeholder="text" class="form-control"></td> ' +
+        '<td><input type="text" placeholder="text" class="form-control"></td> ' +
+        '<td><input type="text" placeholder="text" class="form-control"></td>' +
+        '<td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></td> </tr>');
+        })
+        //       家庭状况的点击添加事件
+        $('.familyer .family').on('click',function () {
+        if($('.anniu2').html()!=='保存'){
+        $('.familyer .family').before('<button type="button" class="anniu2">保存</button>');
+        }
+        $('.familyDown .fanben').after('<tr>' +
+        '<td><input type="text" placeholder="text" class="form-control"></td>' +
+        '<td><input type="text" placeholder="text" class="form-control"></td> ' +
+        '<td><input type="text" placeholder="text" class="form-control"></td> ' +
+        '<td><input type="text" placeholder="text" class="form-control"></td> ' +
+        '<td><input type="text" placeholder="text" class="form-control"></td>' +
+        '<td><input type="text" placeholder="text" class="form-control"></td>' +
+        '<td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></td> </tr>');
+        })
+        //        个人荣誉的点击添加事件
+        $('.rongyu .rong').on('click',function () {
+        if($('.anniu3').html()!=='保存'){
+        $('.rongyu .rong').before('<button type="button" class="anniu3">保存</button>');
+        }
+        $('.rongDown .fanben').after('<tr>' +
+        '<td><input type="text" placeholder="text" class="form-control"></td>' +
+        '<td><input type="text" placeholder="text" class="form-control"></td> ' +
+        '<td><input type="text" placeholder="text" class="form-control"></td> ' +
+        '<td><button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></td> </tr>');
+        })
+
+
+    })
+</script>
+</body>
+</html>

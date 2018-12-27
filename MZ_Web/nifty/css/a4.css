@@ -1,0 +1,106 @@
+body {
+    background-color: #888;
+    font-size: 17px;
+    color: #000;
+    font-family: "微软雅黑", Arial, Helvetica, sans-serif;
+}
+
+.a4 {
+    width: 794px;
+    /*height: 1123px;*/
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 50px;
+    overflow: hidden;
+}
+
+header, footer {
+    text-align: center;
+    overflow: hidden;
+}
+
+    header .ht_con:nth-of-type(1) {
+        text-align: left;
+    }
+
+    header .ht_con:nth-of-type(2) {
+        text-align: right;
+    }
+
+    header .ht_con, footer div {
+        display: inline-block;
+        width: 50%;
+        float: left;
+    }
+
+        header .ht_con input {
+            width: 70%;
+        }
+
+input, input[type="text"] {
+    outline: none;
+    border: 0px;
+    border-bottom: 1px solid #000;
+    font-size: 18px;
+    text-align: center;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid #000;
+}
+
+td, th {
+    height: 34px;
+}
+
+b {
+    display: block;
+    margin-bottom: 10px;
+}
+
+ol {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+.a4 > div {
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+footer {
+    position: relative;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+    footer div {
+        text-align: left;
+        width: 47.7%;
+        border: 1px solid #000;
+        padding: 1%;
+        line-height: 26px;
+    }
+
+        footer div:nth-of-type(2) {
+            border-left: none;
+        }
+
+    footer > img {
+        position: absolute;
+        right: 17%;
+        width: 25%;
+    }

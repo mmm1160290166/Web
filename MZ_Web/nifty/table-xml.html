@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <!--css引入  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/nifty.min.css">
+    <link rel="stylesheet" href="css/demo/nifty-demo-icons.min.css">
+    <link rel="stylesheet" href="css/demo/nifty-demo.min.css">
+    <link rel="stylesheet" href="plugins/switchery/switchery.min.css">
+    <link rel="stylesheet" href="plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.css">
+    <link href="plugins/bootstrap-select/bootstrap-select.min.css" rel="stylesheet">
+    <link href="plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/chosen/chosen.min.css">
+    <link rel="stylesheet" href="plugins/noUiSlider/nouislider.min.css">
+    <link href="plugins/select2/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/pace/pace.min.css">
+    <link rel="stylesheet" href="plugins/magic-check/css/magic-check.min.css">
+    <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+    <link href="plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/nifty.p8.css">
+    <link rel="stylesheet" href="css/genaral.css">
+
+    <!--js引入  -->
+    <script src="plugins/pace/pace.min.js"></script>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/nifty.min.js"></script>
+    <script src="js/demo/nifty-demo.min.js"></script>
+    <script src="plugins/switchery/switchery.min.js"></script>
+    <script src="plugins/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+    <script src="plugins/chosen/chosen.jquery.min.js"></script>
+    <script src="plugins/select2/js/select2.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+    <script src="js/demo/form-component.js"></script>
+</head>
+<body>
+    <div id="page-content">
+        <div class="panel">
+            <div class="panel-heading">
+                <h3 class="panel-title">Basic Data Tables with responsive plugin</h3>
+            </div>
+            <div id="demo-custom-toolbar2" class="table-toolbar-left">
+                <button id="demo-dt-addrow-btn" class="btn btn-primary"><i class="demo-pli-plus"></i> Add row</button>
+            </div>
+            <table class="table-xml table table-bordered border-xml" id="demo-foo-addrow">
+                <thead>
+                <tr>
+                    <th>程序代码</th>
+                    <th>表名</th>
+                    <th>中文名</th>
+                    <th>主/从表</th>
+                    <th>描述</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="email" placeholder="text" class="form-control">
+                        </td>
+                        <td>
+                            <input type="email" placeholder="text" class="form-control">
+                        </td>
+                        <td>
+                            <input type="email" placeholder="text" class="form-control">
+                        </td>
+                        <td>
+                            <input type="email" placeholder="text" class="form-control">
+                        </td>
+                        <td>
+                            <input type="email" placeholder="text" class="form-control">
+                        </td>
+                        <td>
+                            <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea placeholder="textarea" rows="2" class="form-control"></textarea>
+                        </td>
+                        <td>
+                            <textarea placeholder="textarea" rows="2" class="form-control"></textarea>
+                        </td>
+                        <td>
+                            <textarea placeholder="textarea" rows="2" class="form-control"></textarea>
+                        </td>
+                        <td>
+                            <textarea placeholder="textarea" rows="2" class="form-control"></textarea>
+                        </td>
+                        <td>
+                            <textarea placeholder="textarea" rows="2" class="form-control"></textarea>
+                        </td>
+                        <td>
+                            <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="checkbox">
+                                <input id="demo-form-inline-checkbox" class="magic-checkbox" type="checkbox" checked>
+                                <label for="demo-form-inline-checkbox">Option 1</label>
+                                <input id="demo-form-inline-checkbox-2" class="magic-checkbox" type="checkbox">
+                                <label for="demo-form-inline-checkbox-2">Option 2</label>
+                                <input id="demo-form-inline-checkbox-3" class="magic-checkbox" type="checkbox">
+                                <label for="demo-form-inline-checkbox-3">Option 3</label>
+                            </div>
+                        </td>
+                        <td>
+                            <input id="demo-online-status-checkbox" class="toggle-switch" type="checkbox" checked>
+                            <label for="demo-online-status-checkbox"></label>
+                        </td>
+                        <td>
+                            <div class="radio">
+                                <input id="demo-inline-form-radio" class="magic-radio" type="radio" name="inline-form-radio" checked>
+                                <label for="demo-inline-form-radio">Option 1</label>
+
+                                <input id="demo-inline-form-radio-3" class="magic-radio" type="radio" name="inline-form-radio">
+                                <label for="demo-inline-form-radio-3">Option 3</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="demo-dp-component date-picker">
+                                <div class="input-group date date-picker">
+                                    <input type="text" class="form-control">
+                                    <span class="input-group-addon"><i class="demo-pli-calendar-4"></i></span>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <select id="demo-cs-multiselect" data-placeholder="Choose a Country..." multiple tabindex="4">
+                                <option value="United States">United States</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Afghanistan">Afghanistan</option>
+                                <option value="Aland Islands">Aland Islands</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="American Samoa">American Samoa</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Timor-leste">Timor-leste</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Tokelau">Tokelau</option>
+                                <option value="Tonga">Tonga</option>
+                                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                <option value="Tunisia">Tunisia</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Turkmenistan">Turkmenistan</option>
+                                <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                                <option value="Tuvalu">Tuvalu</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="United Arab Emirates">United Arab Emirates</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="United States">United States</option>
+                                <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Uzbekistan">Uzbekistan</option>
+                                <option value="Vanuatu">Vanuatu</option>
+                                <option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option>
+                                <option value="Viet Nam">Viet Nam</option>
+                                <option value="Virgin Islands, British">Virgin Islands, British</option>
+                                <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                                <option value="Wallis and Futuna">Wallis and Futuna</option>
+                                <option value="Western Sahara">Western Sahara</option>
+                                <option value="Yemen">Yemen</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                            </select>
+                        </td>
+                        <td>
+                            <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <span class="pull-left btn btn-primary btn-file">
+                                点击添加附件 <input type="file">
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <span class="pull-left btn btn-primary btn-file">
+                                点击添加附件 <input type="file">
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <span class="pull-left btn btn-primary btn-file">
+                                点击添加附件 <input type="file">
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <span class="pull-left btn btn-primary btn-file">
+                                点击添加附件 <input type="file">
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <span class="pull-left btn btn-primary btn-file">
+                                点击添加附件 <input type="file">
+                                </span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="New task" autocomplete="off">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success"><i class="demo-pli-add"></i></button>
+                            </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="New task" autocomplete="off">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success"><i class="demo-pli-add"></i></button>
+                            </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="New task" autocomplete="off">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success"><i class="demo-pli-add"></i></button>
+                            </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="New task" autocomplete="off">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success"><i class="demo-pli-add"></i></button>
+                            </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="New task" autocomplete="off">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success"><i class="demo-pli-add"></i></button>
+                            </span>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" class="form-control" placeholder="Add a tag" value="Sport, Movie, Video" data-role="tagsinput">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" placeholder="Add a tag" value="Sport, Movie, Video" data-role="tagsinput">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" placeholder="Add a tag" value="Sport, Movie, Video" data-role="tagsinput">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" placeholder="Add a tag" value="Sport, Movie, Video" data-role="tagsinput">
+                        </td>
+                        <td>
+                            <input type="text" class="form-control" placeholder="Add a tag" value="Sport, Movie, Video" data-role="tagsinput">
+                        </td>
+                        <td>
+                            <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select class="selectpicker">
+                                <option>HTML</option>
+                                <option>CSS</option>
+                                <option>jQuery</option>
+                                <option>Javascript</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="selectpicker">
+                                <option>HTML</option>
+                                <option>CSS</option>
+                                <option>jQuery</option>
+                                <option>Javascript</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="selectpicker">
+                                <option>HTML</option>
+                                <option>CSS</option>
+                                <option>jQuery</option>
+                                <option>Javascript</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="selectpicker">
+                                <option>HTML</option>
+                                <option>CSS</option>
+                                <option>jQuery</option>
+                                <option>Javascript</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select class="selectpicker">
+                                <option>HTML</option>
+                                <option>CSS</option>
+                                <option>jQuery</option>
+                                <option>Javascript</option>
+                            </select>
+                        </td>
+                        <td>
+                            <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select data-placeholder="Choose a Country..." id="demo-chosen-select" tabindex="2">
+                                <option value="United States">United States</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Afghanistan">Afghanistan</option>
+                                <option value="Aland Islands">Aland Islands</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="American Samoa">American Samoa</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="Pitcairn">Pitcairn</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Puerto Rico">Puerto Rico</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Reunion">Reunion</option>
+                                <option value="Romania">Romania</option>
+                                <option value="Russian Federation">Russian Federation</option>
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="Saint Barthelemy">Saint Barthelemy</option>
+                                <option value="Viet Nam">Viet Nam</option>
+                                <option value="Virgin Islands, British">Virgin Islands, British</option>
+                                <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                                <option value="Wallis and Futuna">Wallis and Futuna</option>
+                                <option value="Western Sahara">Western Sahara</option>
+                                <option value="Yemen">Yemen</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                            </select>
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>
+                            <button class="demo-delete-row btn btn-danger btn-xs"><i class="demo-pli-cross"></i></button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script>
+    $(function () {
+        $('.date-picker').datepicker({
+            language: 'zh-CN',
+            autoclose: true,//选中之后自动隐藏日期选择框
+            todayHighlight: true,
+            clearBtn: true,//清除按钮
+            format: "yyyy-mm-dd"//日期格式
+        })
+    })
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

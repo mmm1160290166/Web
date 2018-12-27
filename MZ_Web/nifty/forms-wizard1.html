@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Wizard | Nifty - Admin Template</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/nifty.min.css" rel="stylesheet">
+    <link href="css/demo/nifty-demo-icons.min.css" rel="stylesheet">
+    <link href="plugins/bootstrap-validator/bootstrapValidator.min.css" rel="stylesheet">
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+    <script src="plugins/bootstrap-validator/bootstrapValidator.min.js"></script>
+    <script src="js/demo/form-wizard.js"></script>
+
+</head>
+<body>
+    <div id="page-content">
+        <div class="panel">
+                    <div class="panel-heading rel-xml">
+                        <h3 class="panel-title">Basic Data Tables with responsive plugin</h3>
+                        <div id="demo-custom-toolbar2" class="table-toolbar-right abs-xml">
+                            <button id="demo-dt-addrow-btn" class="btn btn-primary">保存</button>
+                        </div>
+                    </div>
+                    <div id="demo-step-wz">
+                        <div class="wz-heading wz-w-label bg-info">
+
+                            <!--Progress bar-->
+                            <div class="progress progress-xs">
+                                <div style="width: 15%;" class="progress-bar progress-bar-dark"></div>
+                            </div>
+
+                            <!--Nav-->
+                            <ul class="wz-steps wz-icon-bw wz-nav-off text-lg">
+                                <li class="col-xs-3">
+                                    <a data-toggle="tab" href="#demo-step-tab1">
+                                        <span class="icon-wrap icon-wrap-xs icon-circle bg-gray mar-ver">
+                                            <span class="wz-icon icon-txt text-bold">1</span>
+                                            <i class="wz-icon-done demo-psi-like"></i>
+                                        </span>
+                                        <small class="wz-desc box-block text-semibold">Account</small>
+                                    </a>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a data-toggle="tab" href="#demo-step-tab2">
+                                        <span class="icon-wrap icon-wrap-xs icon-circle bg-gray mar-ver">
+                                            <span class="wz-icon icon-txt text-bold">2</span>
+                                            <i class="wz-icon-done demo-psi-like"></i>
+                                        </span>
+                                        <small class="wz-desc box-block text-semibold">Profile</small>
+                                    </a>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a data-toggle="tab" href="#demo-step-tab3">
+                                        <span class="icon-wrap icon-wrap-xs icon-circle bg-gray mar-ver">
+                                            <span class="wz-icon icon-txt text-bold">3</span>
+                                            <i class="wz-icon-done demo-psi-like"></i>
+                                        </span>
+                                        <small class="wz-desc box-block text-semibold">Address</small>
+                                    </a>
+                                </li>
+                                <li class="col-xs-3">
+                                    <a data-toggle="tab" href="#demo-step-tab4">
+                                        <span class="icon-wrap icon-wrap-xs icon-circle bg-gray mar-ver">
+                                            <span class="wz-icon icon-txt text-bold">4</span>
+                                            <i class="wz-icon-done demo-psi-like"></i>
+                                        </span>
+                                        <small class="wz-desc box-block text-semibold">Finish</small>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--Form-->
+                        <form class="form-horizontal">
+                            <div class="panel-body">
+                                <div class="tab-content">
+
+                                    <!--First tab-->
+                                    <div id="demo-step-tab1" class="tab-pane">
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">Username</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" class="form-control" name="username" placeholder="Username">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">Email address</label>
+                                            <div class="col-lg-7">
+                                                <input type="email" class="form-control" name="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Second tab-->
+                                    <div id="demo-step-tab2" class="tab-pane fade">
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">First name</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="First name" name="firstName" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">Last name</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="Last name" name="lastName" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Third tab-->
+                                    <div id="demo-step-tab3" class="tab-pane">
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">Phone Number</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="Phone number" name="phoneNumber" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-lg-3 control-label">Address</label>
+                                            <div class="col-lg-7">
+                                                <input type="text" placeholder="Address" name="address" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Fourth tab-->
+                                    <div id="demo-step-tab4" class="tab-pane mar-btm text-center">
+                                        <h4>Thank you</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Footer button-->
+                            <div class="panel-footer text-right">
+                                <div class="box-inline">
+                                    <button type="button" class="previous btn btn-info">Previous</button>
+                                    <button type="button" class="next btn btn-info">Next</button>
+                                    <button type="button" class="finish btn btn-info" disabled>Finish</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!--===================================================-->
+                    <!-- End Bubble Numbers Form Wizard -->
+
+                </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+
+    $(function () {
+        alert("1");
+    });
+</script>

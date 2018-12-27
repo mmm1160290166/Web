@@ -1,0 +1,35 @@
+ul.dynatree-container{font-family: tahoma, arial, helvetica; font-size: 10pt; white-space: nowrap; padding: 3px; margin: 0; background-color: white; overflow: auto; height: 100%;} ul.dynatree-container ul{padding: 0 0 0 16px; margin: 0;} ul.dynatree-container li{list-style-image: none; list-style-position: outside; list-style-type: none; -moz-background-clip: border; -moz-background-inline-policy: continuous; -moz-background-origin: padding; background-attachment: scroll; background-color: transparent; background-position: 0 0; background-repeat: repeat-y; background-image: none; margin: 0; padding: 1px 0 0 0;} ul.dynatree-container li.dynatree-lastsib{background-image: none;}
+ul.dynatree-no-connector > li{background-image: none;}
+.ui-dynatree-disabled ul.dynatree-container{opacity: 0.5; background-color: silver;}
+span.dynatree-empty,
+span.dynatree-vline,
+span.dynatree-connector,
+span.dynatree-expander,
+span.dynatree-icon,
+span.dynatree-checkbox,
+span.dynatree-radio,
+span.dynatree-drag-helper-img,
+#dynatree-drop-marker{width: 16px; height: 16px; display: inline-block; vertical-align: top; background-repeat: no-repeat; background-position: left; background-image: url("icons.gif"); background-position: 0 0;}
+ul.dynatree-container img{width: 16px; height: 16px; margin-left: 3px; vertical-align: top; border-style: none;}
+span.dynatree-connector{background-image: none;}
+span.dynatree-expander{background-position: 0px -80px; cursor: pointer;} span.dynatree-expander:hover{background-position: -16px -80px;}
+.dynatree-exp-cl span.dynatree-expander{}
+.dynatree-exp-cd span.dynatree-expander{}
+.dynatree-exp-cdl span.dynatree-expander{}
+.dynatree-exp-e span.dynatree-expander,
+.dynatree-exp-ed span.dynatree-expander,
+.dynatree-exp-el span.dynatree-expander,
+.dynatree-exp-edl span.dynatree-expander{background-position: -32px -80px;} .dynatree-exp-e span.dynatree-expander:hover, .dynatree-exp-ed span.dynatree-expander:hover, .dynatree-exp-el span.dynatree-expander:hover, .dynatree-exp-edl span.dynatree-expander:hover{background-position: -48px -80px;}
+.dynatree-loading span.dynatree-expander{background-position: 0 0; background-image: url("loading.gif");}
+span.dynatree-node{display: inline-block; vertical-align: top;}
+ul.dynatree-container a{color: black; text-decoration: none; vertical-align: top; margin: 0px; margin-left: 3px; border: 1px solid white;} ul.dynatree-container a:hover{background: #F2F7FD; border-color: #B8D6FB;}
+span.dynatree-node a{display: inline-block; padding: 3px 3px;}
+span.dynatree-folder a{display: inline-block;padding:1px 3px;}
+span.dynatree-folder a span{font-size:14px; font-weight:bold;}
+ul.dynatree-container a:focus,
+span.dynatree-focused a:link{background-color: #EFEBDE;}
+span.dynatree-has-children a{}
+span.dynatree-expanded a{}
+span.dynatree-selected i{color: #4dbcfc;}
+span.dynatree-selected span{color: #4dbcfc;}
+span.dynatree-active a{border: 1px solid #99DEFD; background-color: #D8F0FA;}
